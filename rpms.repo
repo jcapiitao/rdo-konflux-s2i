@@ -1,0 +1,91 @@
+[delorean-master-testing]
+name=dlrn-master-testing
+baseurl=https://buildlogs.centos.org/centos/9-stream/cloud/x86_64/openstack-epoxy/
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Extras-SHA512
+module_hotfixes=1
+
+[baseos]
+name=CentOS Stream $releasever - BaseOS
+baseurl=https://mirror.stream.centos.org/9-stream/BaseOS/x86_64/os/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+countme=1
+enabled=1
+
+[appstream]
+name=CentOS Stream $releasever - AppStream
+baseurl=https://mirror.stream.centos.org/9-stream/AppStream/x86_64/os/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+countme=1
+enabled=1
+
+[crb]
+name=CentOS Stream $releasever - CRB
+baseurl=https://mirror.stream.centos.org/9-stream/CRB/x86_64/os/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+countme=1
+enabled=0
+
+[highavailability]
+name=CentOS Stream $releasever - HighAvailability
+baseurl=https://mirror.stream.centos.org/9-stream/HighAvailability/x86_64/os/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial
+gpgcheck=1
+repo_gpgcheck=0
+metadata_expire=6h
+countme=1
+enabled=0
+
+[centos9-rabbitmq]
+name=centos9-rabbitmq
+baseurl=http://mirror.stream.centos.org/SIGs/9-stream/messaging/$basearch/rabbitmq-38/
+enabled=1
+gpgcheck=0
+module_hotfixes=1
+
+[centos9-storage]
+name=centos9-storage
+baseurl=http://mirror.stream.centos.org/SIGs/9-stream/storage/$basearch/ceph-reef/
+enabled=1
+gpgcheck=0
+module_hotfixes=1
+
+[centos9-opstools]
+name=centos9-opstools
+baseurl=http://mirror.stream.centos.org/SIGs/9-stream/opstools/$basearch/collectd-5/
+enabled=1
+gpgcheck=0
+module_hotfixes=1
+
+[centos9-nfv-ovs]
+name=NFV SIG OpenvSwitch
+baseurl=http://mirror.stream.centos.org/SIGs/9-stream/nfv/$basearch/openvswitch-2/
+gpgcheck=0
+enabled=1
+module_hotfixes=1
+
+# epel is required for Ceph Reef
+[epel-low-priority]
+name=Extra Packages for Enterprise Linux $releasever - $basearch
+baseurl=https://dl.fedoraproject.org/pub/epel/9/Everything/x86_64/
+enabled=1
+gpgcheck=0
+countme=1
+priority=100
+includepkgs=libarrow*,parquet*,python3-asyncssh,re2,python3-grpcio,grpc*,abseil*
+
+[extras-common]
+name=CentOS Stream $releasever - Extras packages
+baseurl=https://mirror.stream.centos.org/SIGs/9-stream/extras/$basearch/extras-common/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Extras-SHA512
+gpgcheck=1

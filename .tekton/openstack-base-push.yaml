@@ -1,0 +1,55 @@
+apiVersion: tekton.dev/v1
+kind: PipelineRun
+metadata:
+  annotations:
+    build.appstudio.openshift.io/repo: https://github.com/jcapiitao/rdo-konflux-s2i?rev={{revision}}
+    build.appstudio.redhat.com/commit_sha: '{{revision}}'
+    build.appstudio.redhat.com/target_branch: '{{target_branch}}'
+    pipelinesascode.tekton.dev/max-keep-runs: "3"
+    pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "main" &&
+      (
+          "./openstack-base".pathChanged() ||
+          ".tekton/openstack-base-*".pathChanged()
+      )
+  creationTimestamp: null
+  labels:
+    appstudio.openshift.io/application: rdo-konflux-s2i
+    appstudio.openshift.io/component: openstack-base
+    pipelines.appstudio.openshift.io/type: build
+  name: openstack-base-on-push
+  namespace: jcapitao-redhat-com-tenant
+spec:
+  params:
+  - name: git-url
+    value: '{{source_url}}'
+  - name: revision
+    value: '{{revision}}'
+  - name: output-image
+    value: quay.io/konflux-fedora/jcapitao-redhat-com-tenant/rdo-konflux-s2i/openstack-base:{{revision}}
+  - name: dockerfile
+    value: openstack-base/Containerfile
+  - name: path-context
+    value: openstack-base/source
+  - name: hermetic
+    value: true
+  - name: prefetch-input
+    value: '[{"type": "rpm", "path": "openstack-base/"}, {"type": "pip", "path": "openstack-base/source", "requirements_files": ["requirements.txt"]}]'
+  pipelineRef:
+    name: build
+  taskRunTemplate: {}
+  workspaces:
+  - name: workspace
+    volumeClaimTemplate:
+      metadata:
+        creationTimestamp: null
+      spec:
+        accessModes:
+        - ReadWriteOnce
+        resources:
+          requests:
+            storage: 1Gi
+      status: {}
+  - name: git-auth
+    secret:
+      secretName: '{{ git_auth_secret }}'
+status: {}
