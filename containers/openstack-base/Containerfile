@@ -1,0 +1,44 @@
+# This containerfile definition comes from the TCIB base/ folder
+
+# FIXME: centos-release-cloud RPM which contains the GPG key for the Cloud SiG
+# is not yet in extras. We are pulling a CS10 image that contains the GPG key
+# to make Cachito able to check data authenticity.
+# https://cbs.centos.org/koji/taskinfo?taskID=4341441
+# https://pagure.io/centos-infra/issue/1551
+#FROM quay.io/centos/centos:stream10
+FROM quay.io/jcapitao/centos:stream10
+LABEL maintainer="OpenStack Kubernetes Operator team"
+LABEL tcib_managed=true
+ENV LANG="en_US.UTF-8"
+ENV container="oci"
+USER root
+RUN if [ -f "/etc/yum.repos.d/ubi.repo" ]; then rm -f /etc/yum.repos.d/ubi.repo && dnf clean all && rm -rf /var/cache/dnf; fi
+# FIXME: once centos-release-cloud shipped in extras, uncomment line below and remove next one
+#RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial-SHA256 /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Extras-SHA512 && dnf install -y centos-release-cloud && rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud
+RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial-SHA256 /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Extras-SHA512 /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud
+RUN dnf install -y crudini && crudini --del /etc/dnf/dnf.conf main override_install_langs && crudini --set /etc/dnf/dnf.conf main clean_requirements_on_remove True && crudini --set /etc/dnf/dnf.conf main exactarch 1 && crudini --set /etc/dnf/dnf.conf main gpgcheck 1 && crudini --set /etc/dnf/dnf.conf main install_weak_deps False && if [ 'centos' == 'centos' ];then crudini --set /etc/dnf/dnf.conf main best False; fi && crudini --set /etc/dnf/dnf.conf main installonly_limit 0 && crudini --set /etc/dnf/dnf.conf main keepcache 0 && crudini --set /etc/dnf/dnf.conf main obsoletes 1 && crudini --set /etc/dnf/dnf.conf main plugins 1 && crudini --set /etc/dnf/dnf.conf main skip_missing_names_on_install False && crudini --set /etc/dnf/dnf.conf main tsflags nodocs
+RUN dnf install -y ca-certificates dumb-init glibc-langpack-en procps-ng python3 python3-pip python3-setuptools python3-wheel sudo util-linux-user which gcc python3-devel git-core libffi-devel openssl-devel
+COPY . /workspace
+ENV CRYPTOGRAPHY_DONT_BUILD_RUST=1
+RUN pip install --verbose --no-cache-dir /workspace/containers/openstack-base/tcib
+RUN cp /workspace/containers/openstack-base/tcib/container-images/kolla/base/uid_gid_manage.sh /usr/local/bin/uid_gid_manage
+RUN chmod 755 /usr/local/bin/uid_gid_manage
+RUN bash /usr/local/bin/uid_gid_manage kolla hugetlbfs libvirt qemu
+RUN touch /usr/local/bin/kolla_extend_start && chmod 755 /usr/local/bin/kolla_extend_start
+RUN cp /workspace/containers/openstack-base/tcib/container-images/kolla/base/set_configs.py /usr/local/bin/kolla_set_configs
+RUN chmod 755 /usr/local/bin/kolla_set_configs
+RUN cp /workspace/containers/openstack-base/tcib/container-images/kolla/base/start.sh /usr/local/bin/kolla_start
+RUN chmod 755 /usr/local/bin/kolla_start
+RUN cp /workspace/containers/openstack-base/tcib/container-images/kolla/base/httpd_setup.sh /usr/local/bin/kolla_httpd_setup
+RUN chmod 755 /usr/local/bin/kolla_httpd_setup
+RUN cp /workspace/containers/openstack-base/tcib/container-images/kolla/base/copy_cacerts.sh /usr/local/bin/kolla_copy_cacerts
+RUN chmod 755 /usr/local/bin/kolla_copy_cacerts
+RUN cp /workspace/containers/openstack-base/tcib/container-images/kolla/base/sudoers /etc/sudoers
+RUN chmod 440 /etc/sudoers
+RUN sed -ri '/^(passwd:|group:)/ s/systemd//g' /etc/nsswitch.conf
+RUN dnf -y reinstall which && rpm -e --nodeps tzdata && dnf -y install tzdata
+RUN mkdir -p /openstack
+RUN dnf update -y && dnf clean all && rm -rf /var/cache/dnf
+STOPSIGNAL SIGTERM
+ENTRYPOINT ["dumb-init", "--single-child", "--"]
+CMD ["kolla_start"]

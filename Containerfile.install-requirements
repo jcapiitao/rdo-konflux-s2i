@@ -1,0 +1,6 @@
+FROM localhost/s2i-cs10-dev-libs:latest
+COPY . /src
+WORKDIR /src
+RUN source /tmp/cachi2.env && \
+    python3 -m pip install --no-cache-dir --use-pep517 --no-binary :all: -r requirements-build.txt && \
+    python3 -m pip install --no-cache-dir --use-pep517 --no-binary :all: -r requirements.txt

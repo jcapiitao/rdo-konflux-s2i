@@ -1,0 +1,1667 @@
+---
+lockfileVersion: 1
+lockfileVendor: redhat
+arches:
+- arch: x86_64
+  packages:
+  - url: https://buildlogs.centos.org/centos/10-stream/cloud/x86_64/openstack-epoxy/Packages/c/crudini-0.9.5-4.el10s.noarch.rpm
+    repoid: delorean-master-testing
+    size: 32027
+    checksum: sha256:816993d7a33468df8ba4d13dcd47f2a68df3a667f39067cff1dee8080c364065
+    name: crudini
+    evr: 0.9.5-4.el10s
+    sourcerpm: crudini-0.9.5-4.el10s.src.rpm
+  - url: https://buildlogs.centos.org/centos/10-stream/cloud/x86_64/openstack-epoxy/Packages/d/dumb-init-1.2.5-12.el10s.x86_64.rpm
+    repoid: delorean-master-testing
+    size: 22158
+    checksum: sha256:5c424abb3c4581ea262d9621db22409603ad1dcec95b39158f99ac6622dcb82c
+    name: dumb-init
+    evr: 1.2.5-12.el10s
+    sourcerpm: dumb-init-1.2.5-12.el10s.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cpp-14.2.1-6.el10.x86_64.rpm
+    repoid: appstream
+    size: 13419037
+    checksum: sha256:77aeb43191468ce1b865d8ef066e11377b84f7d8f0b70d9275c9002ffbb983e4
+    name: cpp
+    evr: 14.2.1-6.el10
+    sourcerpm: gcc-14.2.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/frr-10.1-7.el10.x86_64.rpm
+    repoid: appstream
+    size: 5023256
+    checksum: sha256:7b16ea9bdd076a6b214426d49b15b9335c98cccc2e2c4a486b3aaeb071379f7c
+    name: frr
+    evr: 10.1-7.el10
+    sourcerpm: frr-10.1-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/gawk-all-langpacks-5.3.0-4.el10.x86_64.rpm
+    repoid: appstream
+    size: 281823
+    checksum: sha256:ec2f56ed2ce8cd28cb5020ee0290b2339719117c19bc767991f91c1d8d76860f
+    name: gawk-all-langpacks
+    evr: 5.3.0-4.el10
+    sourcerpm: gawk-5.3.0-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/gcc-14.2.1-6.el10.x86_64.rpm
+    repoid: appstream
+    size: 39794071
+    checksum: sha256:2ca3b07b060e9ac906b351cddd46ddeddde6ac1fdfda5ec7066b3585b4b72ab6
+    name: gcc
+    evr: 14.2.1-6.el10
+    sourcerpm: gcc-14.2.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/git-core-2.45.2-4.el10.x86_64.rpm
+    repoid: appstream
+    size: 4984092
+    checksum: sha256:4a2efc6fa3a574233452ea88622e08b7cc5e12ad9c9fccb53a117a11b2fb476e
+    name: git-core
+    evr: 2.45.2-4.el10
+    sourcerpm: git-2.45.2-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/glibc-devel-2.39-23.el10.x86_64.rpm
+    repoid: appstream
+    size: 105165
+    checksum: sha256:a90c5cc0ab873fb01a92e784a1d39c029bfd00eff2e68766105b1b126092ac5f
+    name: glibc-devel
+    evr: 2.39-23.el10
+    sourcerpm: glibc-2.39-23.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/glibc-headers-2.39-23.el10.x86_64.rpm
+    repoid: appstream
+    size: 640903
+    checksum: sha256:3043b1f4ce85ddaad8575d70a24692c53b65bc354961aa3ef9ba47e399eb769b
+    name: glibc-headers
+    evr: 2.39-23.el10
+    sourcerpm: glibc-2.39-23.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/haproxy-3.0.3-1.el10.x86_64.rpm
+    repoid: appstream
+    size: 2739660
+    checksum: sha256:a4019b709bdb1c858a07dcd75c811d8d8b0d84f925bf4557aeebae2f4e91a2d6
+    name: haproxy
+    evr: 3.0.3-1.el10
+    sourcerpm: haproxy-3.0.3-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/kernel-headers-6.12.0-31.el10.x86_64.rpm
+    repoid: appstream
+    size: 2165233
+    checksum: sha256:3d5697c0a1c5447b8db26aedc0ba8d8b6aa547861a1d41d0ccd49f518ef50376
+    name: kernel-headers
+    evr: 6.12.0-31.el10
+    sourcerpm: kernel-6.12.0-31.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libffi-devel-3.4.4-9.el10.x86_64.rpm
+    repoid: appstream
+    size: 29831
+    checksum: sha256:9036d81a7fc161bc4e9c31c35b09d8eb5b6213d5a07e48a3d4af7e2f8d1e2306
+    name: libffi-devel
+    evr: 3.4.4-9.el10
+    sourcerpm: libffi-3.4.4-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libmpc-1.3.1-7.el10.x86_64.rpm
+    repoid: appstream
+    size: 72998
+    checksum: sha256:daaa73a35dfe21a8201581e333b79ccd296ae87a93f9796ba522e58edc23777c
+    name: libmpc
+    evr: 1.3.1-7.el10
+    sourcerpm: libmpc-1.3.1-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libxcrypt-devel-4.4.36-10.el10.x86_64.rpm
+    repoid: appstream
+    size: 30592
+    checksum: sha256:ccee1b09985e24bfed47cf7b5c965d7e0e869862ac55f3b7f783cdcec93716f3
+    name: libxcrypt-devel
+    evr: 4.4.36-10.el10
+    sourcerpm: libxcrypt-4.4.36-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libxkbcommon-1.7.0-4.el10.x86_64.rpm
+    repoid: appstream
+    size: 148718
+    checksum: sha256:74d65a6b09b639e600cb3344c5fc4118b81e1eca5c4a928c74cfe8858639140d
+    name: libxkbcommon
+    evr: 1.7.0-4.el10
+    sourcerpm: libxkbcommon-1.7.0-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libyang-2.1.148-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 486276
+    checksum: sha256:077eb1e439f735b41e696d2eb0cc4214179838ec1839f39c95b75c34417137a9
+    name: libyang
+    evr: 2.1.148-2.el10
+    sourcerpm: libyang-2.1.148-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/lm_sensors-libs-3.6.0-20.el10.x86_64.rpm
+    repoid: appstream
+    size: 42541
+    checksum: sha256:8d8b6f3bdcb2f22cf47dc892c30974bceb4e98c10bf586c15162a7c90a1cd71e
+    name: lm_sensors-libs
+    evr: 3.6.0-20.el10
+    sourcerpm: lm_sensors-3.6.0-20.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/memcached-1.6.23-7.el10.x86_64.rpm
+    repoid: appstream
+    size: 189695
+    checksum: sha256:84382b3ca3f13030bfe3f28c056a8b3e97a97bfa8051dbf902263e3856ed4141
+    name: memcached
+    evr: 1.6.23-7.el10
+    sourcerpm: memcached-1.6.23-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/net-snmp-5.9.4-14.el10.x86_64.rpm
+    repoid: appstream
+    size: 317238
+    checksum: sha256:c23cd6e44ccec2deabe81fa93baba3da120f65bb5f2a6b86c891a6b45cca1832
+    name: net-snmp
+    evr: 1:5.9.4-14.el10
+    sourcerpm: net-snmp-5.9.4-14.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/net-snmp-agent-libs-5.9.4-14.el10.x86_64.rpm
+    repoid: appstream
+    size: 713723
+    checksum: sha256:7ddad63bc8d3ed7e0e4d011386e9ae5749bc3992425ed9d255cee457a37164e9
+    name: net-snmp-agent-libs
+    evr: 1:5.9.4-14.el10
+    sourcerpm: net-snmp-5.9.4-14.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/net-snmp-libs-5.9.4-14.el10.x86_64.rpm
+    repoid: appstream
+    size: 774108
+    checksum: sha256:64023b61e147e6f56486de5640fe85be4ef836807e23670b66a567bfd0ebc597
+    name: net-snmp-libs
+    evr: 1:5.9.4-14.el10
+    sourcerpm: net-snmp-5.9.4-14.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/openssl-devel-3.2.2-14.el10.x86_64.rpm
+    repoid: appstream
+    size: 4056454
+    checksum: sha256:53667a7c96b5f9c7d6540162c7a431043c606976ec30ec8d8c3a1a95992947e8
+    name: openssl-devel
+    evr: 1:3.2.2-14.el10
+    sourcerpm: openssl-3.2.2-14.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/perl-File-Copy-2.41-511.el10.noarch.rpm
+    repoid: appstream
+    size: 21453
+    checksum: sha256:fb914521e36a4d42ef9d295ff5395b5a943065d278cbf6c95ca98b1b71344946
+    name: perl-File-Copy
+    evr: 2.41-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/perl-NDBM_File-1.17-511.el10.x86_64.rpm
+    repoid: appstream
+    size: 24121
+    checksum: sha256:b8d1199a635fef3463938d8285fda370c69fa22279bc149a013a35f8e8b41bdd
+    name: perl-NDBM_File
+    evr: 1.17-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/perl-Term-ReadLine-1.17-511.el10.noarch.rpm
+    repoid: appstream
+    size: 20347
+    checksum: sha256:4adc5d023188bf744a32046af1d2ef2d3ffcd9f57c1f05e2a40caec3349460b4
+    name: perl-Term-ReadLine
+    evr: 1.17-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/python-unversioned-command-3.12.6-2.el10.noarch.rpm
+    repoid: appstream
+    size: 13120
+    checksum: sha256:019bc38e1772b16e7fb42a00557fa24e9a99f79fdaba92f945e2f68fda927d83
+    name: python-unversioned-command
+    evr: 3.12.6-2.el10
+    sourcerpm: python3.12-3.12.6-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/python3-devel-3.12.6-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 337360
+    checksum: sha256:89e9c7d3d7f46a2078891ed4d1280a5fe4cb4962a211b0c8ee87ff713b0f5665
+    name: python3-devel
+    evr: 3.12.6-2.el10
+    sourcerpm: python3.12-3.12.6-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/python3-pip-23.3.2-7.el10.noarch.rpm
+    repoid: appstream
+    size: 3393448
+    checksum: sha256:70cb0ed633da305b80dc7ab6bd03aa94b92e3c449097d869236885165e7e06ec
+    name: python3-pip
+    evr: 23.3.2-7.el10
+    sourcerpm: python-pip-23.3.2-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/python3-unbound-1.20.0-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 115051
+    checksum: sha256:d5d317aea2a624dc140e22d458f16e3a0208dc74a1ae50cbfd2aed27fcd4727b
+    name: python3-unbound
+    evr: 1.20.0-2.el10
+    sourcerpm: unbound-1.20.0-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/sudo-python-plugin-1.9.15-8.p5.el10.x86_64.rpm
+    repoid: appstream
+    size: 58712
+    checksum: sha256:076ed19ae88972143bffb2bb73a6ae622b883c16da1a406af598b8b0ee885cdc
+    name: sudo-python-plugin
+    evr: 1.9.15-8.p5.el10
+    sourcerpm: sudo-1.9.15-8.p5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/unbound-anchor-1.20.0-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 36148
+    checksum: sha256:693e048b70f542cc15c14c8b66afdce25592b06d2a2a3f3f49e90521597de0e7
+    name: unbound-anchor
+    evr: 1.20.0-2.el10
+    sourcerpm: unbound-1.20.0-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/unbound-libs-1.20.0-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 557689
+    checksum: sha256:637c869341f8c2bab6e3ef8c1c0f73b8ec6da4c95e7f3e41a0adfeaa38e579da
+    name: unbound-libs
+    evr: 1.20.0-2.el10
+    sourcerpm: unbound-1.20.0-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/xkeyboard-config-2.41-3.el10.noarch.rpm
+    repoid: appstream
+    size: 1023893
+    checksum: sha256:aaf6275b49909a8f24738d3cef239fd44a6dcb75655b5575c897653da8e6f1cf
+    name: xkeyboard-config
+    evr: 2.41-3.el10
+    sourcerpm: xkeyboard-config-2.41-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/alternatives-1.30-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 43107
+    checksum: sha256:1c8b83bf3dd0fa8d998a3c801986f50ea3661c2f8a21c60971c0391c381919c8
+    name: alternatives
+    evr: 1.30-2.el10
+    sourcerpm: chkconfig-1.30-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/audit-libs-4.0-10.el10.x86_64.rpm
+    repoid: baseos
+    size: 123688
+    checksum: sha256:56132d0563909dc2389ee8034613d2295bb2f25d059a65941db9bd997b9587de
+    name: audit-libs
+    evr: 4.0-10.el10
+    sourcerpm: audit-4.0-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/authselect-1.5.0-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 147406
+    checksum: sha256:2a16d12c77181f77189fac10b4a3f76c2d0dd97e230d9074f7d24d2e4967ab35
+    name: authselect
+    evr: 1.5.0-8.el10
+    sourcerpm: authselect-1.5.0-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/authselect-libs-1.5.0-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 228324
+    checksum: sha256:c3cb5c662f1225e0c1f90c406c2ab3bfad8191a4d1b46614b49dfd298f33c53a
+    name: authselect-libs
+    evr: 1.5.0-8.el10
+    sourcerpm: authselect-1.5.0-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/basesystem-11-22.el10.noarch.rpm
+    repoid: baseos
+    size: 4377
+    checksum: sha256:76ff57f4d7565cd0e49f5e6dc38f3707dfe6a6b61317d883c2701be4277f2abf
+    name: basesystem
+    evr: 11-22.el10
+    sourcerpm: basesystem-11-22.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/bash-5.2.26-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 1897933
+    checksum: sha256:43f0049d64a7ac40488024b91d36b08bc46b0dbdc02f9a155e5d25f53b549990
+    name: bash
+    evr: 5.2.26-4.el10
+    sourcerpm: bash-5.2.26-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/binutils-2.41-49.el10.x86_64.rpm
+    repoid: baseos
+    size: 6710431
+    checksum: sha256:cc50a5550fcd838c9b21966f7d6bd5a7db330b6feee2ccae87f29fa9fc763cf0
+    name: binutils
+    evr: 2.41-49.el10
+    sourcerpm: binutils-2.41-49.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/binutils-gold-2.41-49.el10.x86_64.rpm
+    repoid: baseos
+    size: 811064
+    checksum: sha256:61f0de9737136938f2d5ce91fee1ba163742b2b7ca83c910f02183b3c9711b10
+    name: binutils-gold
+    evr: 2.41-49.el10
+    sourcerpm: binutils-2.41-49.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/bzip2-libs-1.0.8-19.el10.x86_64.rpm
+    repoid: baseos
+    size: 43617
+    checksum: sha256:b94b6efb1114eb968b72307eb252ebf78b4ea910c12a629b812f91148eb67c2f
+    name: bzip2-libs
+    evr: 1.0.8-19.el10
+    sourcerpm: bzip2-1.0.8-19.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/c-ares-1.25.0-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 151975
+    checksum: sha256:b9ac702048b3c808eaab7ff13be68beb72168066d03b8e632a7e535171782b0c
+    name: c-ares
+    evr: 1.25.0-6.el10
+    sourcerpm: c-ares-1.25.0-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/ca-certificates-2024.2.69_v8.0.303-102.3.el10.noarch.rpm
+    repoid: baseos
+    size: 1136955
+    checksum: sha256:4aa5fa971966c3d12033ffd11b0ab32de02607873b56f37aa390b8e5fa5a88e5
+    name: ca-certificates
+    evr: 2024.2.69_v8.0.303-102.3.el10
+    sourcerpm: ca-certificates-2024.2.69_v8.0.303-102.3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/centos-gpg-keys-10.0-3.el10.noarch.rpm
+    repoid: baseos
+    size: 14322
+    checksum: sha256:6504b83bdb5f3c7ac1ef9b021b98e1ff16c29c6f9461e8097a675c195c4e4970
+    name: centos-gpg-keys
+    evr: 10.0-3.el10
+    sourcerpm: centos-stream-release-10.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/centos-stream-release-10.0-3.el10.noarch.rpm
+    repoid: baseos
+    size: 29481
+    checksum: sha256:c4323b82be23dcbd14b38099a25a220b01aa6738e5858a9129df6ef0b812f147
+    name: centos-stream-release
+    evr: 10.0-3.el10
+    sourcerpm: centos-stream-release-10.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/centos-stream-repos-10.0-3.el10.noarch.rpm
+    repoid: baseos
+    size: 12351
+    checksum: sha256:f15055df34d5f6812f0ab1ad10360a5503d1d56634bf968e9a38e893eca03301
+    name: centos-stream-repos
+    evr: 10.0-3.el10
+    sourcerpm: centos-stream-release-10.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/coreutils-9.5-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 1203802
+    checksum: sha256:02e76f4ac63619e4190b8cdccdcb14af7c501f23bca2447a44a9394f14491dcf
+    name: coreutils
+    evr: 9.5-5.el10
+    sourcerpm: coreutils-9.5-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/coreutils-common-9.5-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 2250736
+    checksum: sha256:5f279f0fb320266ae0f068bf55efea1dacf3efccbba626065b6d12a1e7b2dd74
+    name: coreutils-common
+    evr: 9.5-5.el10
+    sourcerpm: coreutils-9.5-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/cracklib-2.9.11-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 98369
+    checksum: sha256:4d648a415fe67550a22ff50befdaf9a33ccb55dbc9a2e3d4121ddfbe2ee843f7
+    name: cracklib
+    evr: 2.9.11-8.el10
+    sourcerpm: cracklib-2.9.11-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/cracklib-dicts-2.9.11-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 3825174
+    checksum: sha256:79dd2684b0ae0cbc47739c0e292f17243eb448b92f74bae893cf1eb4aba14703
+    name: cracklib-dicts
+    evr: 2.9.11-8.el10
+    sourcerpm: cracklib-2.9.11-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/crypto-policies-20241128-1.git0dd441c.el10.noarch.rpm
+    repoid: baseos
+    size: 100535
+    checksum: sha256:9e6eab9c4b93c9db0175e792c75ef708a098ed46b7c592c6d3dc9f8da43fb8ac
+    name: crypto-policies
+    evr: 20241128-1.git0dd441c.el10
+    sourcerpm: crypto-policies-20241128-1.git0dd441c.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/cryptsetup-libs-2.7.5-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 548000
+    checksum: sha256:efddc5dc0bd9923d1ff6e502e92a4b89d4233e12bb8c70e2f0dce23252121ff5
+    name: cryptsetup-libs
+    evr: 2.7.5-2.el10
+    sourcerpm: cryptsetup-2.7.5-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/curl-8.9.1-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 319200
+    checksum: sha256:5aa94390eefcf55fad428dd601f2637375ce935e3bc360f294d77b711c81247b
+    name: curl
+    evr: 8.9.1-5.el10
+    sourcerpm: curl-8.9.1-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/cyrus-sasl-lib-2.1.28-22.el10.x86_64.rpm
+    repoid: baseos
+    size: 108826
+    checksum: sha256:6ec2759702ac1f0f1244ac33bcc5c4de85a5c320fd63edf85d2a819eaaf4ea69
+    name: cyrus-sasl-lib
+    evr: 2.1.28-22.el10
+    sourcerpm: cyrus-sasl-2.1.28-22.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/dbus-1.14.10-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 4501
+    checksum: sha256:c71f38667ecebd3ba0adf415ccf181209330bb0e2ca9ad0bf4de9828b370b9e4
+    name: dbus
+    evr: 1:1.14.10-5.el10
+    sourcerpm: dbus-1.14.10-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/dbus-broker-35-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 178820
+    checksum: sha256:74c1d53aaf58fb5fc48433b4917b1f8c74c4621cbf480c0be8cf023ef1ff35e2
+    name: dbus-broker
+    evr: 35-8.el10
+    sourcerpm: dbus-broker-35-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/dbus-common-1.14.10-5.el10.noarch.rpm
+    repoid: baseos
+    size: 15579
+    checksum: sha256:1cf5e00ed550daa874c5ec81be43f4606717a2465d72b733d3b9012015dfa751
+    name: dbus-common
+    evr: 1:1.14.10-5.el10
+    sourcerpm: dbus-1.14.10-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/device-mapper-1.02.202-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 142437
+    checksum: sha256:ee3844e4a129a0e02fa9a5fc636e91d000fbe5f86721afc5477d8de21662e65b
+    name: device-mapper
+    evr: 10:1.02.202-3.el10
+    sourcerpm: lvm2-2.03.28-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/device-mapper-libs-1.02.202-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 186156
+    checksum: sha256:13124d9c22aeea37abed44a5db5be7ddf23f207de981c3e521786b5982afe8d4
+    name: device-mapper-libs
+    evr: 10:1.02.202-3.el10
+    sourcerpm: lvm2-2.03.28-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/diffutils-3.10-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 418970
+    checksum: sha256:96882ec03cfc01ae557f0ec547fb8d346179eb705c899bec0533eafda7c1bd80
+    name: diffutils
+    evr: 3.10-8.el10
+    sourcerpm: diffutils-3.10-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/elfutils-debuginfod-client-0.192-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 45703
+    checksum: sha256:ba694b1d027672602d23faf2e34dcd77fb2739e4137177d8dcd93b25259e9cee
+    name: elfutils-debuginfod-client
+    evr: 0.192-4.el10
+    sourcerpm: elfutils-0.192-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/elfutils-default-yama-scope-0.192-4.el10.noarch.rpm
+    repoid: baseos
+    size: 13465
+    checksum: sha256:da7918bc0fb70ff2faacd3744fa9193340ac27d6ef7168efc493e1f7f53ca8ab
+    name: elfutils-default-yama-scope
+    evr: 0.192-4.el10
+    sourcerpm: elfutils-0.192-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/elfutils-libelf-0.192-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 213327
+    checksum: sha256:671836422ba1b6369866acebb32f4ad1fb1b9bac76daa35c765f601bbd8b06dc
+    name: elfutils-libelf
+    evr: 0.192-4.el10
+    sourcerpm: elfutils-0.192-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/elfutils-libs-0.192-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 269834
+    checksum: sha256:f56a35bffb5d731a67320fa7e5f933b06c4103b52b77407d0ec31907dcb03017
+    name: elfutils-libs
+    evr: 0.192-4.el10
+    sourcerpm: elfutils-0.192-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/expat-2.6.4-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 118221
+    checksum: sha256:bd56809196262374eb80177b651e66988e1bf47e4786c08410362ecec27d98df
+    name: expat
+    evr: 2.6.4-1.el10
+    sourcerpm: expat-2.6.4-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/filesystem-3.18-16.el10.x86_64.rpm
+    repoid: baseos
+    size: 4974974
+    checksum: sha256:b16d2e7de9ecc9fc93982d3c2805848414780180a8e302ab5b50592212115b56
+    name: filesystem
+    evr: 3.18-16.el10
+    sourcerpm: filesystem-3.18-16.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/findutils-4.10.0-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 563940
+    checksum: sha256:c646c7c108a007d62792aa66e0bc9326312089a0f8bc1c9e9300b301fd2e4276
+    name: findutils
+    evr: 1:4.10.0-5.el10
+    sourcerpm: findutils-4.10.0-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/gawk-5.3.0-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 1131463
+    checksum: sha256:cce415406778ad41dfaf8e41288233162b4725b36369382cb27e2cf6fcc67abf
+    name: gawk
+    evr: 5.3.0-4.el10
+    sourcerpm: gawk-5.3.0-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/gdbm-1.23-9.el10.x86_64.rpm
+    repoid: baseos
+    size: 155006
+    checksum: sha256:fd38764d944c772dd1b5990ea6efb0b314f81b0ddd493f5e8b6c7f5f0cdfd199
+    name: gdbm
+    evr: 1:1.23-9.el10
+    sourcerpm: gdbm-1.23-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/gdbm-libs-1.23-9.el10.x86_64.rpm
+    repoid: baseos
+    size: 58636
+    checksum: sha256:27eb729d062567fe5b0b3636f31eda0a4e0540c63ba098d43a2877051a1dd75d
+    name: gdbm-libs
+    evr: 1:1.23-9.el10
+    sourcerpm: gdbm-1.23-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/glibc-2.39-23.el10.x86_64.rpm
+    repoid: baseos
+    size: 2260930
+    checksum: sha256:8987286a0b60d0aa2c9b5074599b2a1392d87ca60e48a2ed4b692bb7c12ae8f2
+    name: glibc
+    evr: 2.39-23.el10
+    sourcerpm: glibc-2.39-23.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/glibc-common-2.39-23.el10.x86_64.rpm
+    repoid: baseos
+    size: 393118
+    checksum: sha256:19f2fc6b2cf3656778a9b92faef5d3443e7b8e5de5dd43c138f69ccdaa0ad3c8
+    name: glibc-common
+    evr: 2.39-23.el10
+    sourcerpm: glibc-2.39-23.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/glibc-gconv-extra-2.39-23.el10.x86_64.rpm
+    repoid: baseos
+    size: 1845624
+    checksum: sha256:a03815f514f6c211fc819f783f945fa16de3679f4e7055efd7ab2ca38c19d1c0
+    name: glibc-gconv-extra
+    evr: 2.39-23.el10
+    sourcerpm: glibc-2.39-23.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/glibc-langpack-en-2.39-23.el10.x86_64.rpm
+    repoid: baseos
+    size: 744913
+    checksum: sha256:6a52d35fcedc67269218c2f653f7ed0f08cfb254230240a113a253be10afe276
+    name: glibc-langpack-en
+    evr: 2.39-23.el10
+    sourcerpm: glibc-2.39-23.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/gmp-6.2.1-9.el10.x86_64.rpm
+    repoid: baseos
+    size: 324442
+    checksum: sha256:a309a63f6b7951f669dbb86a27419e2ad8fc25c550417a31983c2680611a84ef
+    name: gmp
+    evr: 1:6.2.1-9.el10
+    sourcerpm: gmp-6.2.1-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/grep-3.11-10.el10.x86_64.rpm
+    repoid: baseos
+    size: 307973
+    checksum: sha256:a0eb701c640cd0a0c9195493a8fc9206fff62174d958ba4af2d92527191f803f
+    name: grep
+    evr: 3.11-10.el10
+    sourcerpm: grep-3.11-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/groff-base-1.23.0-10.el10.x86_64.rpm
+    repoid: baseos
+    size: 1178549
+    checksum: sha256:b55cab3f647a517739abdce086e6ad977e4606281bc16786c2268f8d791883ca
+    name: groff-base
+    evr: 1.23.0-10.el10
+    sourcerpm: groff-1.23.0-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/gzip-1.13-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 174210
+    checksum: sha256:ebf2b741d0417c6c109d21b1115d664cfc31b3bd2fbf2acd468f6a055d44e038
+    name: gzip
+    evr: 1.13-2.el10
+    sourcerpm: gzip-1.13-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/hostname-3.23-13.el10.x86_64.rpm
+    repoid: baseos
+    size: 29815
+    checksum: sha256:7d39efbf8f23966c67af9c2441f3144c88870ccfeb27b43c68f7cf0e7cc90064
+    name: hostname
+    evr: 3.23-13.el10
+    sourcerpm: hostname-3.23-13.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/jansson-2.14-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 47512
+    checksum: sha256:25d2ef852d5941b27ae105ec780aa367605a6f8b86e6c6a13abdee1c1065979f
+    name: jansson
+    evr: 2.14-3.el10
+    sourcerpm: jansson-2.14-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/json-c-0.18-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 46500
+    checksum: sha256:e73ae01d509fb9bef1bbd675be1c0003b0ee942a4187e9b14ef43e56e508245b
+    name: json-c
+    evr: 0.18-3.el10
+    sourcerpm: json-c-0.18-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/keyutils-libs-1.6.3-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 33309
+    checksum: sha256:ab855401616df0ed00b481ecc8ef14bec3f149b4100c53400f35576cc86f342f
+    name: keyutils-libs
+    evr: 1.6.3-4.el10
+    sourcerpm: keyutils-1.6.3-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kmod-libs-31-10.el10.x86_64.rpm
+    repoid: baseos
+    size: 72387
+    checksum: sha256:2ca7a0f65f8dafc598fefbea89adb45b4fd201ec9e8560d65d0792bbdfa8a98d
+    name: kmod-libs
+    evr: 31-10.el10
+    sourcerpm: kmod-31-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/krb5-libs-1.21.3-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 781656
+    checksum: sha256:b4c62f7b5a81bd5b5626f8e360f50a1ed8d191a10ef50febe1cbb0b8b7ed25cf
+    name: krb5-libs
+    evr: 1.21.3-2.el10
+    sourcerpm: krb5-1.21.3-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/less-661-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 195697
+    checksum: sha256:1cf4afdf660772f65668cc702722facd7ed79d849150e14cab623cffd4167516
+    name: less
+    evr: 661-3.el10
+    sourcerpm: less-661-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libacl-2.3.2-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 26051
+    checksum: sha256:dd06cfe883fcdf7cb14b749180abfd9fe9924723341a8644a9f65c086febc647
+    name: libacl
+    evr: 2.3.2-4.el10
+    sourcerpm: acl-2.3.2-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libarchive-3.7.7-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 425892
+    checksum: sha256:580b6aacde3ac577858806c5c69922a230194034937984869421256f07cc0c67
+    name: libarchive
+    evr: 3.7.7-1.el10
+    sourcerpm: libarchive-3.7.7-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libattr-2.5.2-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 19574
+    checksum: sha256:2ec3c5ba70aaae97db5226f07476c3fd0adfeed15d7cce3b676288273c829274
+    name: libattr
+    evr: 2.5.2-5.el10
+    sourcerpm: attr-2.5.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libblkid-2.40.2-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 129311
+    checksum: sha256:e5e6a465ce677a1dab9f6e8a6d2288d79b3df376430f41fe00a4186c7857c3f7
+    name: libblkid
+    evr: 2.40.2-5.el10
+    sourcerpm: util-linux-2.40.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libbpf-1.5.0-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 190778
+    checksum: sha256:2e00adbf54ad30ef19d794f67c62d2387bc5b019184c989966b13d9c04780b19
+    name: libbpf
+    evr: 2:1.5.0-3.el10
+    sourcerpm: libbpf-1.5.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libbrotli-1.1.0-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 354106
+    checksum: sha256:7ca3a7daa9caf6b87944c3fe785bf6738ef774bc7855089983c42d5f31e319f9
+    name: libbrotli
+    evr: 1.1.0-6.el10
+    sourcerpm: brotli-1.1.0-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libcap-2.69-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 93252
+    checksum: sha256:54c14cb5c8dc3536f43d632d766ed302a8ecad2ad8efd6aa2d079dafc11d1cd9
+    name: libcap
+    evr: 2.69-7.el10
+    sourcerpm: libcap-2.69-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libcap-ng-0.8.4-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 34083
+    checksum: sha256:38b2ce6018bc0c73cdbc79f5cb2bad63045d84c308a56085a9de4adfd3250add
+    name: libcap-ng
+    evr: 0.8.4-6.el10
+    sourcerpm: libcap-ng-0.8.4-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libcbor-0.11.0-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 34953
+    checksum: sha256:49a800e8569ac3e22fbe1b3595683f9934cbeabc6fd03c1a224b97441af7d3ab
+    name: libcbor
+    evr: 0.11.0-3.el10
+    sourcerpm: libcbor-0.11.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libcom_err-1.47.1-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 27885
+    checksum: sha256:511d487f69ce6f9b86e2773ec6d4b06174528d5d529894600afa2f0475791fa6
+    name: libcom_err
+    evr: 1.47.1-3.el10
+    sourcerpm: e2fsprogs-1.47.1-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libcurl-8.9.1-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 368987
+    checksum: sha256:0e5e9b35c2b149d9f3b4ca05358e80ea704cb82d240b3a8bbd97703626a07eec
+    name: libcurl
+    evr: 8.9.1-5.el10
+    sourcerpm: curl-8.9.1-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libeconf-0.6.2-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 34213
+    checksum: sha256:1cdb8e5bf4d7680e41ebb2b76da3aab34c1ece4bba2fed952d8f49da69117dfa
+    name: libeconf
+    evr: 0.6.2-4.el10
+    sourcerpm: libeconf-0.6.2-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libedit-3.1-52.20230828cvs.el10.x86_64.rpm
+    repoid: baseos
+    size: 108282
+    checksum: sha256:49f4225770973669f10c2657e9a0a9c2f9ab8ab54e63412a23d111457d43c4af
+    name: libedit
+    evr: 3.1-52.20230828cvs.el10
+    sourcerpm: libedit-3.1-52.20230828cvs.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libevent-2.1.12-16.el10.x86_64.rpm
+    repoid: baseos
+    size: 267256
+    checksum: sha256:f8f5c3946bbd53590978e9aeca3064d81ab580492c4ff8044c48797870276f47
+    name: libevent
+    evr: 2.1.12-16.el10
+    sourcerpm: libevent-2.1.12-16.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libfdisk-2.40.2-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 164431
+    checksum: sha256:f0abc5b0407d5a6ca05f62fdf2696952499515fd64ea98061fed19e72bbd74e6
+    name: libfdisk
+    evr: 2.40.2-5.el10
+    sourcerpm: util-linux-2.40.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libffi-3.4.4-9.el10.x86_64.rpm
+    repoid: baseos
+    size: 41831
+    checksum: sha256:dc3d5edeeda197fcd3d7097d15cfd0ecb2f325ce3ca7c04d8fc18ae672a26aae
+    name: libffi
+    evr: 3.4.4-9.el10
+    sourcerpm: libffi-3.4.4-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libfido2-1.14.0-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 100605
+    checksum: sha256:5652d77a1394ba80ece520e817832224a03b693d172b7b32587d0fc502419bdd
+    name: libfido2
+    evr: 1.14.0-7.el10
+    sourcerpm: libfido2-1.14.0-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libgcc-14.2.1-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 139366
+    checksum: sha256:eb90fa4a8b8528230c540159994c83d8abded8d7203e3acc46001833c7aa477d
+    name: libgcc
+    evr: 14.2.1-6.el10
+    sourcerpm: gcc-14.2.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libgomp-14.2.1-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 367981
+    checksum: sha256:62a8b348404e617b4813211ba9603b3306979c71d259a75622902bac7ef81a45
+    name: libgomp
+    evr: 14.2.1-6.el10
+    sourcerpm: gcc-14.2.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libidn2-2.3.7-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 120747
+    checksum: sha256:04ae61bbe2cc0db7581d6f96a562b9b87a8a4dba714a0cf2c73bba6306e94c27
+    name: libidn2
+    evr: 2.3.7-3.el10
+    sourcerpm: libidn2-2.3.7-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libmount-2.40.2-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 160078
+    checksum: sha256:e87a38f3cd928d8b56213e450448bdde699285829b71e692f3bdc55f7e05dd17
+    name: libmount
+    evr: 2.40.2-5.el10
+    sourcerpm: util-linux-2.40.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libnghttp2-1.64.0-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 79891
+    checksum: sha256:863f17ae72a965a12cf866b715fd678dae7b1382e5173d7fe5c2b0d7fb99e170
+    name: libnghttp2
+    evr: 1.64.0-1.el10
+    sourcerpm: nghttp2-1.64.0-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libpkgconf-2.1.0-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 40023
+    checksum: sha256:813f59114413d5e14fc566262ee3d4b56b621beacbe40eda6f28d31f464de1a6
+    name: libpkgconf
+    evr: 2.1.0-3.el10
+    sourcerpm: pkgconf-2.1.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libpsl-0.21.5-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 66746
+    checksum: sha256:1dca94a85aabd9730bc731fa8a6abb138fec28b75c6a39694d862135c2ade0f3
+    name: libpsl
+    evr: 0.21.5-6.el10
+    sourcerpm: libpsl-0.21.5-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libpwquality-1.4.5-12.el10.x86_64.rpm
+    repoid: baseos
+    size: 125644
+    checksum: sha256:eda9e6acc99c2c9fa058a9db428da1b0c7441f2be174b9aa7f1628359e36e6ab
+    name: libpwquality
+    evr: 1.4.5-12.el10
+    sourcerpm: libpwquality-1.4.5-12.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libseccomp-2.5.3-10.el10.x86_64.rpm
+    repoid: baseos
+    size: 72946
+    checksum: sha256:d7adb211b0a39d5b313b517fa59d3958e05e5a98e74fb60687e8f698b087cfce
+    name: libseccomp
+    evr: 2.5.3-10.el10
+    sourcerpm: libseccomp-2.5.3-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libselinux-3.7-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 91659
+    checksum: sha256:50d3d35a8e1bf876c84bdbb40c0c84413d6396f90b589017783bbd27d05e79aa
+    name: libselinux
+    evr: 3.7-5.el10
+    sourcerpm: libselinux-3.7-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libsemanage-3.7-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 121030
+    checksum: sha256:3db5449235dd54c64d7c27b6706a4712869776687e0c81899b581285b1679b16
+    name: libsemanage
+    evr: 3.7-4.el10
+    sourcerpm: libsemanage-3.7-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libsepol-3.7-4.el10.x86_64.rpm
+    repoid: baseos
+    size: 352946
+    checksum: sha256:b32edd7816283a057a8bd3ad326f5de9d189f40819e8224fcaa280a340df93c5
+    name: libsepol
+    evr: 3.7-4.el10
+    sourcerpm: libsepol-3.7-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libsmartcols-2.40.2-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 86182
+    checksum: sha256:f710326a4c38d4a4a43efd4e7040d18778e93b65e68597dada62e34172efff1f
+    name: libsmartcols
+    evr: 2.40.2-5.el10
+    sourcerpm: util-linux-2.40.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libssh-0.11.1-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 239133
+    checksum: sha256:72cf4c093aa39d70a6f4710b4c323cd12d49b4332ac98c380b113dd9e7700120
+    name: libssh
+    evr: 0.11.1-1.el10
+    sourcerpm: libssh-0.11.1-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libssh-config-0.11.1-1.el10.noarch.rpm
+    repoid: baseos
+    size: 9915
+    checksum: sha256:6ccda310f183990d7f9790a22970fceede77e83809fd5c95f28a4cbbfe11fdf5
+    name: libssh-config
+    evr: 0.11.1-1.el10
+    sourcerpm: libssh-0.11.1-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libstdc++-14.2.1-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 935687
+    checksum: sha256:a056770559e069a77b13fd9adab55c8814f6fe8ebb6a4efd5a242e92cbe1439e
+    name: libstdc++
+    evr: 14.2.1-6.el10
+    sourcerpm: gcc-14.2.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libtasn1-4.19.0-9.el10.x86_64.rpm
+    repoid: baseos
+    size: 76829
+    checksum: sha256:7799e1d5c59d7b16510716d5a92d9f59f7c73c3cfc5849126c1bf3f58971c24a
+    name: libtasn1
+    evr: 4.19.0-9.el10
+    sourcerpm: libtasn1-4.19.0-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libunistring-1.1-10.el10.x86_64.rpm
+    repoid: baseos
+    size: 560763
+    checksum: sha256:603c06593a43f5766a53588d9ba18855ddb7b238963b8e09d8a328a17959b774
+    name: libunistring
+    evr: 1.1-10.el10
+    sourcerpm: libunistring-1.1-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libutempter-1.2.1-15.el10.x86_64.rpm
+    repoid: baseos
+    size: 28132
+    checksum: sha256:db498c4b6ce6f223597f8ea955fe4e286f4fc5838e81579de877ca0e80c2d6eb
+    name: libutempter
+    evr: 1.2.1-15.el10
+    sourcerpm: libutempter-1.2.1-15.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libuuid-2.40.2-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 30907
+    checksum: sha256:4391534f07076bb0d90f7075a4c364212a48a731fc7932472e6d611c683637a1
+    name: libuuid
+    evr: 2.40.2-5.el10
+    sourcerpm: util-linux-2.40.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libverto-0.3.2-10.el10.x86_64.rpm
+    repoid: baseos
+    size: 22093
+    checksum: sha256:52777e532dc2351c83b72b5033c40df20494afb6504100f7413a65f74368c284
+    name: libverto
+    evr: 0.3.2-10.el10
+    sourcerpm: libverto-0.3.2-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libxcrypt-4.4.36-10.el10.x86_64.rpm
+    repoid: baseos
+    size: 122902
+    checksum: sha256:503a29c4c767637d810c7e89ed4355fe0b588381cb360517585fb56a2cf5ee46
+    name: libxcrypt
+    evr: 4.4.36-10.el10
+    sourcerpm: libxcrypt-4.4.36-10.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libxml2-2.12.5-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 705672
+    checksum: sha256:d5546c6553629eda11b31aad6ccb8f2ea481ee8af806bd7898400e0ee4c5d701
+    name: libxml2
+    evr: 2.12.5-3.el10
+    sourcerpm: libxml2-2.12.5-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libzstd-1.5.5-9.el10.x86_64.rpm
+    repoid: baseos
+    size: 298769
+    checksum: sha256:86f3cb406d56283119c45ec8c1f4689aa37ff6c04cf44f6608c10cfdcccdb2c1
+    name: libzstd
+    evr: 1.5.5-9.el10
+    sourcerpm: zstd-1.5.5-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/lua-libs-5.4.6-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 135025
+    checksum: sha256:cb9268a17c06928ffb0805ff43d733b0c67171ff3a969cc16b40c7f3e59d64f3
+    name: lua-libs
+    evr: 5.4.6-7.el10
+    sourcerpm: lua-5.4.6-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/lz4-libs-1.9.4-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 69993
+    checksum: sha256:de360e857e8465c4b38990375e9435efc78e20d022afe42dbf2986d11fc2c759
+    name: lz4-libs
+    evr: 1.9.4-8.el10
+    sourcerpm: lz4-1.9.4-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/make-4.4.1-9.el10.x86_64.rpm
+    repoid: baseos
+    size: 601088
+    checksum: sha256:7d0b52fe16c826f8b08656abd70509987e69e2b8a9f0c42fda803d41a9e7c74e
+    name: make
+    evr: 1:4.4.1-9.el10
+    sourcerpm: make-4.4.1-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/mariadb-connector-c-3.4.1-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 214572
+    checksum: sha256:61866579344a9a00a2ad299b2890ec6aa05d712f40974cc5ceeac48eaca1e6d9
+    name: mariadb-connector-c
+    evr: 3.4.1-2.el10
+    sourcerpm: mariadb-connector-c-3.4.1-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/mariadb-connector-c-config-3.4.1-2.el10.noarch.rpm
+    repoid: baseos
+    size: 9979
+    checksum: sha256:2031f65094175a5dda21067722ec9ab24712ed09c5d153815b311f4ef1a0fe2d
+    name: mariadb-connector-c-config
+    evr: 3.4.1-2.el10
+    sourcerpm: mariadb-connector-c-3.4.1-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/mpdecimal-2.5.1-12.el10.x86_64.rpm
+    repoid: baseos
+    size: 92337
+    checksum: sha256:7d1762e4770170efa93ff4f7e07cf523f62d3e3378f50d87d7b307cd8a73ee77
+    name: mpdecimal
+    evr: 2.5.1-12.el10
+    sourcerpm: mpdecimal-2.5.1-12.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/mpfr-4.2.1-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 354613
+    checksum: sha256:a70bc74bde41c17df2d789ffc2a3c3034e1203c6a6c50e6133994f130d23e6bb
+    name: mpfr
+    evr: 4.2.1-5.el10
+    sourcerpm: mpfr-4.2.1-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/ncurses-6.4-14.20240127.el10.x86_64.rpm
+    repoid: baseos
+    size: 433453
+    checksum: sha256:0a08f1818cc70b19bf319c1e019540aad1019460e6d913a61f6069a4ecf17fa5
+    name: ncurses
+    evr: 6.4-14.20240127.el10
+    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/ncurses-base-6.4-14.20240127.el10.noarch.rpm
+    repoid: baseos
+    size: 102314
+    checksum: sha256:6e439dd9afd65b489675c37f03bdcd950353ed6b822c31ee620fe370642db042
+    name: ncurses-base
+    evr: 6.4-14.20240127.el10
+    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/ncurses-libs-6.4-14.20240127.el10.x86_64.rpm
+    repoid: baseos
+    size: 346468
+    checksum: sha256:80256770f1fb9639ea2e1cc744ba6cdbc6b65850d74c6e66a64fc9bcbb4837f4
+    name: ncurses-libs
+    evr: 6.4-14.20240127.el10
+    sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openldap-2.6.7-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 243198
+    checksum: sha256:a680445764eefed738ad7542fa68a85a5562bb09dc15d1996469c81a5febdf27
+    name: openldap
+    evr: 2.6.7-5.el10
+    sourcerpm: openldap-2.6.7-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openssh-9.9p1-4.el10.1.x86_64.rpm
+    repoid: baseos
+    size: 362631
+    checksum: sha256:5aeb6ca473c2b36ccdac644bdd6402cb89c4a7d9244cddcad0a71db5548a98fc
+    name: openssh
+    evr: 9.9p1-4.el10.1
+    sourcerpm: openssh-9.9p1-4.el10.1.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openssh-clients-9.9p1-4.el10.1.x86_64.rpm
+    repoid: baseos
+    size: 808542
+    checksum: sha256:c341f413ec1bfcd9f856db8e579ac1a5eee6aa703b80a6b8e48f92897061a265
+    name: openssh-clients
+    evr: 9.9p1-4.el10.1
+    sourcerpm: openssh-9.9p1-4.el10.1.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openssl-libs-3.2.2-14.el10.x86_64.rpm
+    repoid: baseos
+    size: 2438868
+    checksum: sha256:0212e7f261c7045a5f3fa29d9b1540140d8ab886661b227e819794ee3bcee441
+    name: openssl-libs
+    evr: 1:3.2.2-14.el10
+    sourcerpm: openssl-3.2.2-14.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/p11-kit-0.25.5-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 509011
+    checksum: sha256:0dd4d98f3c43144f2fe24a90c2559e4c085ba0bb88506aeee67623a55d49d5ef
+    name: p11-kit
+    evr: 0.25.5-7.el10
+    sourcerpm: p11-kit-0.25.5-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/p11-kit-trust-0.25.5-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 137549
+    checksum: sha256:ae16185e6030e4882ea8f76f9b680bc6002c87e4f16992c1f429dfbf2941a4a2
+    name: p11-kit-trust
+    evr: 0.25.5-7.el10
+    sourcerpm: p11-kit-0.25.5-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/pam-1.6.1-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 598870
+    checksum: sha256:ed9c37147cc1af577033803adffbfe5121f4477c9943c16dcb8668b025ad87d4
+    name: pam
+    evr: 1.6.1-7.el10
+    sourcerpm: pam-1.6.1-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/pam-libs-1.6.1-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 59752
+    checksum: sha256:06f2ec321786ff3117583481e5c4de26ac9da0ced2458ca2a736f37bc4382057
+    name: pam-libs
+    evr: 1.6.1-7.el10
+    sourcerpm: pam-1.6.1-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/pcre2-10.44-1.el10.3.x86_64.rpm
+    repoid: baseos
+    size: 254221
+    checksum: sha256:773781e3aa9994fa8d6105ddc0b3d00fdd735bd589a5d9fe40fe96be6a7d89a7
+    name: pcre2
+    evr: 10.44-1.el10.3
+    sourcerpm: pcre2-10.44-1.el10.3.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/pcre2-syntax-10.44-1.el10.3.noarch.rpm
+    repoid: baseos
+    size: 154654
+    checksum: sha256:71de87112a846df439b0b3381b35fbba8c6e72109c6a4795c1de96e48bbc5d40
+    name: pcre2-syntax
+    evr: 10.44-1.el10.3
+    sourcerpm: pcre2-10.44-1.el10.3.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-AutoLoader-5.74-511.el10.noarch.rpm
+    repoid: baseos
+    size: 22599
+    checksum: sha256:af91c672371d6f9aba58317026206185cdcfb82f7e08da72ad3c76f05225e33f
+    name: perl-AutoLoader
+    evr: 5.74-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-B-1.89-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 182499
+    checksum: sha256:33a1a8ca6eebb6a3cfc031546ca8289ab42499b73b00a8178c74bb56f77c8f4a
+    name: perl-B
+    evr: 1.89-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Carp-1.54-511.el10.noarch.rpm
+    repoid: baseos
+    size: 30508
+    checksum: sha256:ae6bfa843d790faba91cdd9dbfe6efc758dba03ced7df96390eebe702a855dd4
+    name: perl-Carp
+    evr: 1.54-511.el10
+    sourcerpm: perl-Carp-1.54-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Class-Struct-0.68-511.el10.noarch.rpm
+    repoid: baseos
+    size: 23437
+    checksum: sha256:14b0e4e73bc5d132b586b368858633624dfbeaee4ac36c4665f0556d47b7982e
+    name: perl-Class-Struct
+    evr: 0.68-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Data-Dumper-2.189-512.el10.x86_64.rpm
+    repoid: baseos
+    size: 58529
+    checksum: sha256:cd895473bfb2a5aae44f221cad5e7076182736b6b3b85b0d88f143ab409d7050
+    name: perl-Data-Dumper
+    evr: 2.189-512.el10
+    sourcerpm: perl-Data-Dumper-2.189-512.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Digest-1.20-511.el10.noarch.rpm
+    repoid: baseos
+    size: 26301
+    checksum: sha256:306b23d0d290212e5fa61678daeb5adc9a4b9158859f6f9531d9a8316cc73ae1
+    name: perl-Digest
+    evr: 1.20-511.el10
+    sourcerpm: perl-Digest-1.20-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Digest-MD5-2.59-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 38095
+    checksum: sha256:aab9fca3c87b9f1e9e64a751868c50cd3611293aa2d4012069e0a1fe70bcc3c2
+    name: perl-Digest-MD5
+    evr: 2.59-6.el10
+    sourcerpm: perl-Digest-MD5-2.59-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-DynaLoader-1.56-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 27500
+    checksum: sha256:ad4384765bf6eed24d0a64f9e405666d0b469b935798e94702967705facf29fe
+    name: perl-DynaLoader
+    evr: 1.56-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Encode-3.21-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 1116000
+    checksum: sha256:2382fa2f35b47589aaa74f2a21532b13fd06330fcf4bcd2daad8cc67fdb3367f
+    name: perl-Encode
+    evr: 4:3.21-511.el10
+    sourcerpm: perl-Encode-3.21-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Errno-1.38-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 16157
+    checksum: sha256:dce50ee67749bfe1ec0d63fe6473ab9db543ff63e33502b9c8d18b3c7ecbe12a
+    name: perl-Errno
+    evr: 1.38-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Exporter-5.78-511.el10.noarch.rpm
+    repoid: baseos
+    size: 32534
+    checksum: sha256:57c1d8b6a95cdbad17508d362f210090787b0f52b182f43cb519186ab2163ea5
+    name: perl-Exporter
+    evr: 5.78-511.el10
+    sourcerpm: perl-Exporter-5.78-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Fcntl-1.18-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 31444
+    checksum: sha256:469e9df463638199a3c5ea54f887bf23627c6107da1a7b323e26a9a088a0b79c
+    name: perl-Fcntl
+    evr: 1.18-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-File-Basename-2.86-511.el10.noarch.rpm
+    repoid: baseos
+    size: 18416
+    checksum: sha256:d3007079a604e4f83b7372b6a66d4c8462a0c030b6045650c09fd2bd1290a57e
+    name: perl-File-Basename
+    evr: 2.86-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-File-Path-2.18-511.el10.noarch.rpm
+    repoid: baseos
+    size: 36982
+    checksum: sha256:de574ced0f2fe04ccb740a4134a143f976130b7f7131ec1096131394030065c5
+    name: perl-File-Path
+    evr: 2.18-511.el10
+    sourcerpm: perl-File-Path-2.18-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-File-Temp-0.231.100-512.el10.noarch.rpm
+    repoid: baseos
+    size: 61604
+    checksum: sha256:12f9bef5649de6044799e552528e6c5e38233a9bfebea7c2841ae45bb128c552
+    name: perl-File-Temp
+    evr: 1:0.231.100-512.el10
+    sourcerpm: perl-File-Temp-0.231.100-512.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-File-stat-1.14-511.el10.noarch.rpm
+    repoid: baseos
+    size: 18302
+    checksum: sha256:ee367304b276f815c76cbae2620c9deedf9d0c60eb67f5668184181ba14329aa
+    name: perl-File-stat
+    evr: 1.14-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-FileHandle-2.05-511.el10.noarch.rpm
+    repoid: baseos
+    size: 16717
+    checksum: sha256:eef375e693560a45408c2ac35e56b52b6638bcadfd0e1f43fdcbb632b95e5cdc
+    name: perl-FileHandle
+    evr: 2.05-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Getopt-Long-2.58-3.el10.noarch.rpm
+    repoid: baseos
+    size: 66073
+    checksum: sha256:3424cc36fb45a7223942844f59f6cad5846d04888f2e17b5f70962eb1b41b3c3
+    name: perl-Getopt-Long
+    evr: 1:2.58-3.el10
+    sourcerpm: perl-Getopt-Long-2.58-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Getopt-Std-1.14-511.el10.noarch.rpm
+    repoid: baseos
+    size: 16916
+    checksum: sha256:15e522b259953cd951105399e3be26d2f5569e48ad7b7285b17c64e84ce1a309
+    name: perl-Getopt-Std
+    evr: 1.14-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-HTTP-Tiny-0.088-512.el10.noarch.rpm
+    repoid: baseos
+    size: 58046
+    checksum: sha256:f42c0e9f38d5f436471622e51f00512833c52a146166061bab8facb83905283e
+    name: perl-HTTP-Tiny
+    evr: 0.088-512.el10
+    sourcerpm: perl-HTTP-Tiny-0.088-512.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-IO-1.55-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 82818
+    checksum: sha256:5955f98ef1df65f129655ddceccd87567919fb936b3a17f239de45274a5737a2
+    name: perl-IO
+    evr: 1.55-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-IO-Socket-IP-0.42-512.el10.noarch.rpm
+    repoid: baseos
+    size: 43794
+    checksum: sha256:f63dc80031eedda23d9f4309b7dffdbccea6faf443e44d5db829e2e7d125bd5f
+    name: perl-IO-Socket-IP
+    evr: 0.42-512.el10
+    sourcerpm: perl-IO-Socket-IP-0.42-512.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-IO-Socket-SSL-2.085-3.el10.noarch.rpm
+    repoid: baseos
+    size: 232064
+    checksum: sha256:c8729c25b2112ea3e3c0f7eedc319c53bed2a10000734f048237f3430fbe7249
+    name: perl-IO-Socket-SSL
+    evr: 2.085-3.el10
+    sourcerpm: perl-IO-Socket-SSL-2.085-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-IPC-Open3-1.22-511.el10.noarch.rpm
+    repoid: baseos
+    size: 23215
+    checksum: sha256:d274fab908cfe146e2e5b977be51c508c58ef6a54fa3351c0cad2f59b68a3a7e
+    name: perl-IPC-Open3
+    evr: 1.22-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-MIME-Base64-3.16-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 31699
+    checksum: sha256:057335a581fac8e8451ccd21231b630c78671809dc79a4fce2e68eb251130036
+    name: perl-MIME-Base64
+    evr: 3.16-511.el10
+    sourcerpm: perl-MIME-Base64-3.16-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Mozilla-CA-20231213-5.el10.noarch.rpm
+    repoid: baseos
+    size: 15235
+    checksum: sha256:858fb3f2d3774696543cfd0ce02059725d8f93471ee3eccbb55005a146a091eb
+    name: perl-Mozilla-CA
+    evr: 20231213-5.el10
+    sourcerpm: perl-Mozilla-CA-20231213-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Net-SSLeay-1.94-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 389805
+    checksum: sha256:fc7d9a27f4b36be105f067ebed9a957cd72d39275270869b74422036939d2682
+    name: perl-Net-SSLeay
+    evr: 1.94-7.el10
+    sourcerpm: perl-Net-SSLeay-1.94-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-POSIX-2.20-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 100057
+    checksum: sha256:d3eb8c1e9d59c6534fb039e758bce7e14989918d7aae9b077a6ba815eef09e32
+    name: perl-POSIX
+    evr: 2.20-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-PathTools-3.91-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 88207
+    checksum: sha256:38a8f1dcae72757c84cd1f94729e052acdda25d17d69c518c045b8f577af92af
+    name: perl-PathTools
+    evr: 3.91-511.el10
+    sourcerpm: perl-PathTools-3.91-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Pod-Escapes-1.07-511.el10.noarch.rpm
+    repoid: baseos
+    size: 21221
+    checksum: sha256:9408ceca5c2f25a08b4acc6296ea7385e0c4e0d7eaab6d30ffe08fa1cbe1e93f
+    name: perl-Pod-Escapes
+    evr: 1:1.07-511.el10
+    sourcerpm: perl-Pod-Escapes-1.07-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Pod-Perldoc-3.28.01-512.el10.noarch.rpm
+    repoid: baseos
+    size: 86335
+    checksum: sha256:96b3260edfc8fd85079d1a382f2e2de172558c86b50b4094988687b58b9e3602
+    name: perl-Pod-Perldoc
+    evr: 3.28.01-512.el10
+    sourcerpm: perl-Pod-Perldoc-3.28.01-512.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Pod-Simple-3.45-511.el10.noarch.rpm
+    repoid: baseos
+    size: 223682
+    checksum: sha256:16973491f7e88df7ee98fad804e8567165783b6fed70b25b60038451f9ce409d
+    name: perl-Pod-Simple
+    evr: 1:3.45-511.el10
+    sourcerpm: perl-Pod-Simple-3.45-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Pod-Usage-2.03-511.el10.noarch.rpm
+    repoid: baseos
+    size: 41886
+    checksum: sha256:b45fbd33e8d5123755f7de7f91d4829ae3b3e5d47c61bb2452709a8a7a150ede
+    name: perl-Pod-Usage
+    evr: 4:2.03-511.el10
+    sourcerpm: perl-Pod-Usage-2.03-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Scalar-List-Utils-1.63-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 75963
+    checksum: sha256:7af6a2345c5088f80b3906d526fd79a8b306ed3aee006fae5419985213dbbe9e
+    name: perl-Scalar-List-Utils
+    evr: 5:1.63-511.el10
+    sourcerpm: perl-Scalar-List-Utils-1.63-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-SelectSaver-1.02-511.el10.noarch.rpm
+    repoid: baseos
+    size: 12853
+    checksum: sha256:c37df65b93ad1a30ccf458c06cf82501f32e25dac3c0fdc7c12df62505fb22b9
+    name: perl-SelectSaver
+    evr: 1.02-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Socket-2.038-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 57132
+    checksum: sha256:08cd3625895969cbeb392b633c0984c6c0e12da80ec8caf7e6254b35019005e2
+    name: perl-Socket
+    evr: 4:2.038-511.el10
+    sourcerpm: perl-Socket-2.038-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Storable-3.32-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 101673
+    checksum: sha256:377029bd654522f36f2cc54fb384e25fcf2c73f181519dafa2cdeed742a3fb1d
+    name: perl-Storable
+    evr: 1:3.32-511.el10
+    sourcerpm: perl-Storable-3.32-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Symbol-1.09-511.el10.noarch.rpm
+    repoid: baseos
+    size: 15387
+    checksum: sha256:736e00c14031d6038615331b1fcf9a7d26cc49fd1835f3968b3ba9cd4aedb061
+    name: perl-Symbol
+    evr: 1.09-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Term-ANSIColor-5.01-512.el10.noarch.rpm
+    repoid: baseos
+    size: 49739
+    checksum: sha256:576853fccf5c33ac83820a8bb1c4b77050195bfc4f1ec5f44b1e9022ea41f480
+    name: perl-Term-ANSIColor
+    evr: 5.01-512.el10
+    sourcerpm: perl-Term-ANSIColor-5.01-512.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Term-Cap-1.18-511.el10.noarch.rpm
+    repoid: baseos
+    size: 23535
+    checksum: sha256:c38cbd3a29492a80b007d3422e1c91ccaa5cfa0e0e6ef1510c3d6b65a1327528
+    name: perl-Term-Cap
+    evr: 1.18-511.el10
+    sourcerpm: perl-Term-Cap-1.18-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Text-ParseWords-3.31-511.el10.noarch.rpm
+    repoid: baseos
+    size: 17710
+    checksum: sha256:f1fd59199549aebb219a2e6c1ddfefbf1c036dd678879acb0988d654d871f40c
+    name: perl-Text-ParseWords
+    evr: 3.31-511.el10
+    sourcerpm: perl-Text-ParseWords-3.31-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Text-Tabs+Wrap-2024.001-511.el10.noarch.rpm
+    repoid: baseos
+    size: 23187
+    checksum: sha256:0e59d9df52d9dd97167b7b792ef3d2db37f55c6eb60c1f5552f6b3bca3673416
+    name: perl-Text-Tabs+Wrap
+    evr: 2024.001-511.el10
+    sourcerpm: perl-Text-Tabs+Wrap-2024.001-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-Time-Local-1.350-511.el10.noarch.rpm
+    repoid: baseos
+    size: 36210
+    checksum: sha256:5d09c697747203770348541c5c93e316dc7969cd4aa403cbd63b0611d0af7dcf
+    name: perl-Time-Local
+    evr: 2:1.350-511.el10
+    sourcerpm: perl-Time-Local-1.350-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-URI-5.27-3.el10.noarch.rpm
+    repoid: baseos
+    size: 136758
+    checksum: sha256:eb3c847230fc73cf0300e06d1839819d286abb5e9bedfb125a8a152e86b9a003
+    name: perl-URI
+    evr: 5.27-3.el10
+    sourcerpm: perl-URI-5.27-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-base-2.27-511.el10.noarch.rpm
+    repoid: baseos
+    size: 17447
+    checksum: sha256:1729d0a657fbf28770e735e39303acfae472954186ac42bca11ca7ca93c71406
+    name: perl-base
+    evr: 2.27-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-constant-1.33-512.el10.noarch.rpm
+    repoid: baseos
+    size: 24426
+    checksum: sha256:9c47c9c1960fffc4ed58d75b37d23265cd76eb1f86b26d316dd601ca7b159f7c
+    name: perl-constant
+    evr: 1.33-512.el10
+    sourcerpm: perl-constant-1.33-512.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-if-0.61.000-511.el10.noarch.rpm
+    repoid: baseos
+    size: 15183
+    checksum: sha256:9a28d3fb6953ef274ceb4c17cc8f2de178018fde0a69848ceb84f0f94fa33eff
+    name: perl-if
+    evr: 0.61.000-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-interpreter-5.40.0-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 74938
+    checksum: sha256:1563859b726afccee90e2a69b768b843d3a10f2e4b031ada713364f3808dc1b8
+    name: perl-interpreter
+    evr: 4:5.40.0-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-libnet-3.15-512.el10.noarch.rpm
+    repoid: baseos
+    size: 130260
+    checksum: sha256:52a19c47731fc69d7b5aa4c668d87f765f1790d3ff8a19ccbedbcd76b38bd0e0
+    name: perl-libnet
+    evr: 3.15-512.el10
+    sourcerpm: perl-libnet-3.15-512.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-libs-5.40.0-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 2517669
+    checksum: sha256:5d0967dcd7a88b92ef8b7751538c21428fb4aac090a3c1e227fa520d9fd60800
+    name: perl-libs
+    evr: 4:5.40.0-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-locale-1.12-511.el10.noarch.rpm
+    repoid: baseos
+    size: 14804
+    checksum: sha256:e48e23a9e4f381805bd4ad429f0c84805bde723121b2907021159ca0f3cffb29
+    name: perl-locale
+    evr: 1.12-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-mro-1.29-511.el10.x86_64.rpm
+    repoid: baseos
+    size: 31497
+    checksum: sha256:95fa81c7443a5dcff57cba1b1e0d2173346ad366e1695856f584b65035c6a7f8
+    name: perl-mro
+    evr: 1.29-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-overload-1.37-511.el10.noarch.rpm
+    repoid: baseos
+    size: 47488
+    checksum: sha256:75d9da111f6b2667e47b2d51937117e9a0ce582485801a744d225ff28fbab5cf
+    name: perl-overload
+    evr: 1.37-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-overloading-0.02-511.el10.noarch.rpm
+    repoid: baseos
+    size: 14064
+    checksum: sha256:eae87620ea7d91705f1ea83f52dcd974380673c249a64a4b8980c9839cfe32fe
+    name: perl-overloading
+    evr: 0.02-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-parent-0.241-512.el10.noarch.rpm
+    repoid: baseos
+    size: 16338
+    checksum: sha256:69024b9fb15e0813a2fc53dabc426a73a86f671b747f2a6656506609aa5e2174
+    name: perl-parent
+    evr: 1:0.241-512.el10
+    sourcerpm: perl-parent-0.241-512.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-podlators-5.01-511.el10.noarch.rpm
+    repoid: baseos
+    size: 126532
+    checksum: sha256:d2e4a91abfaa138d2c6b1a9cf504184b01627d9c3f39f566b3f5861cb4dbf9d7
+    name: perl-podlators
+    evr: 1:5.01-511.el10
+    sourcerpm: perl-podlators-5.01-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/perl-vars-1.05-511.el10.noarch.rpm
+    repoid: baseos
+    size: 14152
+    checksum: sha256:73409367e70e88414b36e07e71ed5904cca10da4feaa71b8b86283a53bc30e7f
+    name: perl-vars
+    evr: 1.05-511.el10
+    sourcerpm: perl-5.40.0-511.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/pkgconf-2.1.0-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 45652
+    checksum: sha256:ced8f494b664667d52245ff94ce6c0b2cad135586a36a9ff7f81281d1533f178
+    name: pkgconf
+    evr: 2.1.0-3.el10
+    sourcerpm: pkgconf-2.1.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/pkgconf-m4-2.1.0-3.el10.noarch.rpm
+    repoid: baseos
+    size: 15341
+    checksum: sha256:4de2147846658c2849aa28f756e5e906a3012be53e656b4a39ae77076286e828
+    name: pkgconf-m4
+    evr: 2.1.0-3.el10
+    sourcerpm: pkgconf-2.1.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/pkgconf-pkg-config-2.1.0-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 11020
+    checksum: sha256:4f5231ffccc59b5f1c42d85cc0dafea9b6901107660931071cf1e65f99af1e0b
+    name: pkgconf-pkg-config
+    evr: 2.1.0-3.el10
+    sourcerpm: pkgconf-2.1.0-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/popt-1.19-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 67265
+    checksum: sha256:bd15d2816600655a5241bc3efe6e1ac386061ba6ff2d05e53c70683db8761e5f
+    name: popt
+    evr: 1.19-8.el10
+    sourcerpm: popt-1.19-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/procps-ng-4.0.4-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 385065
+    checksum: sha256:f8d99780151d08a20d8e121f8b63f1b4d9cf87cc3c9f09cd9907bd2c94fceca2
+    name: procps-ng
+    evr: 4.0.4-5.el10
+    sourcerpm: procps-ng-4.0.4-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/protobuf-c-1.5.0-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 33962
+    checksum: sha256:a7e792e5ed4f89d5f48eb60453619a6e0ad5cd34469526952c1748f1a99ce3ba
+    name: protobuf-c
+    evr: 1.5.0-6.el10
+    sourcerpm: protobuf-c-1.5.0-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/publicsuffix-list-dafsa-20240107-5.el10.noarch.rpm
+    repoid: baseos
+    size: 60580
+    checksum: sha256:440cb6e03187dfd68f62abf1dd751ace84ec8e2179d7de45dde348cf2e7dba11
+    name: publicsuffix-list-dafsa
+    evr: 20240107-5.el10
+    sourcerpm: publicsuffix-list-20240107-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-3.12.6-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 30555
+    checksum: sha256:655b6c9e753df866e1d9d40d9fc09e520b7e2a7e7a541f4c1b9432431e8ece53
+    name: python3
+    evr: 3.12.6-2.el10
+    sourcerpm: python3.12-3.12.6-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-iniparse-0.5-9.el10.noarch.rpm
+    repoid: baseos
+    size: 53926
+    checksum: sha256:c308ffccdfcc96cfe1694b856be9c5463089fa32bd9683fbbab6d58850cdcadb
+    name: python3-iniparse
+    evr: 0.5-9.el10
+    sourcerpm: python-iniparse-0.5-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-libs-3.12.6-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 9880012
+    checksum: sha256:7082c84e708cc63e499c3a05a72e6ca83614590f80e4068775ee11b7581844e3
+    name: python3-libs
+    evr: 3.12.6-2.el10
+    sourcerpm: python3.12-3.12.6-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-pip-wheel-23.3.2-7.el10.noarch.rpm
+    repoid: baseos
+    size: 1546215
+    checksum: sha256:19b2ce4f91ed680267712a2d2158e679267f9163db71f57e9db5f5c684ac15d8
+    name: python3-pip-wheel
+    evr: 23.3.2-7.el10
+    sourcerpm: python-pip-23.3.2-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-setuptools-69.0.3-9.el10.noarch.rpm
+    repoid: baseos
+    size: 1658547
+    checksum: sha256:5d300afae46279dee2a7c5dc344ca40614bf3e89c2e66036fa84aa3461188156
+    name: python3-setuptools
+    evr: 69.0.3-9.el10
+    sourcerpm: python-setuptools-69.0.3-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/python3-six-1.16.0-16.el10.noarch.rpm
+    repoid: baseos
+    size: 42851
+    checksum: sha256:587391f25be67ed7389c4623f1260a16b33dfab99b5b7376e9eb72dafbc78403
+    name: python3-six
+    evr: 1.16.0-16.el10
+    sourcerpm: python-six-1.16.0-16.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/readline-8.2-11.el10.x86_64.rpm
+    repoid: baseos
+    size: 218843
+    checksum: sha256:d8e2d7c011d0e5c56b6875919ce036605862db02d59d6983d470bc5757021783
+    name: readline
+    evr: 8.2-11.el10
+    sourcerpm: readline-8.2-11.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/rpm-4.19.1.1-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 576074
+    checksum: sha256:ea793f1b1b6f0b78d1cabf44c0e05f834af6c8f33dc4de6e56dd1bb667c695a3
+    name: rpm
+    evr: 4.19.1.1-7.el10
+    sourcerpm: rpm-4.19.1.1-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/rpm-libs-4.19.1.1-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 315918
+    checksum: sha256:231005b8771ca666fa1aa65ccd190bf2fa558e9c97b80e370f42447eebe7b0a8
+    name: rpm-libs
+    evr: 4.19.1.1-7.el10
+    sourcerpm: rpm-4.19.1.1-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/rpm-plugin-audit-4.19.1.1-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 19437
+    checksum: sha256:da66d9e592c1410fa457f5a1e05e299fed87197c3703e421fc4df3031a4288a2
+    name: rpm-plugin-audit
+    evr: 4.19.1.1-7.el10
+    sourcerpm: rpm-4.19.1.1-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/rpm-sequoia-1.6.0-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 895266
+    checksum: sha256:d5d7352ba4db7d1c11604c3b266807821ef1af535d99ec9c09afe578ecbaff46
+    name: rpm-sequoia
+    evr: 1.6.0-6.el10
+    sourcerpm: rust-rpm-sequoia-1.6.0-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/sed-4.9-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 325590
+    checksum: sha256:e0f382e42cee7264161ae86a9f063aed753b2a64cfea78d61ba8c35b6a980995
+    name: sed
+    evr: 4.9-3.el10
+    sourcerpm: sed-4.9-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/setup-2.14.5-4.el10.noarch.rpm
+    repoid: baseos
+    size: 157231
+    checksum: sha256:be0183abea6c633efc1574c5093404d58b52a0caf30431cf789f7e0a2c70648b
+    name: setup
+    evr: 2.14.5-4.el10
+    sourcerpm: setup-2.14.5-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/shadow-utils-4.15.0-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 1414857
+    checksum: sha256:88a2a63d6cc6f46bffa3f15ffaffd641e593a7c0db1da28f004194c770af4905
+    name: shadow-utils
+    evr: 2:4.15.0-5.el10
+    sourcerpm: shadow-utils-4.15.0-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/sqlite-libs-3.46.1-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 724441
+    checksum: sha256:bac663a0e488c76288b27efe1089cb7df315da6bc23a8685576bf8461d6ae54e
+    name: sqlite-libs
+    evr: 3.46.1-2.el10
+    sourcerpm: sqlite-3.46.1-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/sudo-1.9.15-8.p5.el10.x86_64.rpm
+    repoid: baseos
+    size: 1388201
+    checksum: sha256:fe08e57b3ddfd9b2c7b1a0829176136e46ae0d051549793c8709e1499368ae2b
+    name: sudo
+    evr: 1.9.15-8.p5.el10
+    sourcerpm: sudo-1.9.15-8.p5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-256-16.el10.x86_64.rpm
+    repoid: baseos
+    size: 5696746
+    checksum: sha256:7df2eeffa6867621e5d723f8ebe576d04a093db511dc792648c8b0bc755cf3f6
+    name: systemd
+    evr: 256-16.el10
+    sourcerpm: systemd-256-16.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-libs-256-16.el10.x86_64.rpm
+    repoid: baseos
+    size: 742883
+    checksum: sha256:4d122fe70ca346120f9a38eb072d5c6538dd2b371389ac343dab1b3e30e4ce01
+    name: systemd-libs
+    evr: 256-16.el10
+    sourcerpm: systemd-256-16.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-pam-256-16.el10.x86_64.rpm
+    repoid: baseos
+    size: 289889
+    checksum: sha256:a1bc5bc03e9daa41ddcbcf57aaa3e03e311ca39d296262f0a8fd647c7b170e10
+    name: systemd-pam
+    evr: 256-16.el10
+    sourcerpm: systemd-256-16.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/tzdata-2024a-3.el10.noarch.rpm
+    repoid: baseos
+    size: 858793
+    checksum: sha256:189b1ae2e8ad8f23745d1d55fc46c82022a3ff3468dccf3f5950aaca5b890ed9
+    name: tzdata
+    evr: 2024a-3.el10
+    sourcerpm: tzdata-2024a-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/util-linux-2.40.2-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 1321361
+    checksum: sha256:7655391a97d9293cc9c806b62b7c1dc966c77e568ce0f399b7f61aff9196cbfd
+    name: util-linux
+    evr: 2.40.2-5.el10
+    sourcerpm: util-linux-2.40.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/util-linux-core-2.40.2-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 563620
+    checksum: sha256:7c977b68dacdae9c940b2edba7e6f6a91888799fc26a345339382f159ea741ce
+    name: util-linux-core
+    evr: 2.40.2-5.el10
+    sourcerpm: util-linux-2.40.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/which-2.21-43.el10.x86_64.rpm
+    repoid: baseos
+    size: 43211
+    checksum: sha256:41e1b2de3c2e19c5a4b5e899341a83561dbc09dea4fdf03cc7188cceb9726aff
+    name: which
+    evr: 2.21-43.el10
+    sourcerpm: which-2.21-43.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/xz-libs-5.6.2-3.el10.x86_64.rpm
+    repoid: baseos
+    size: 115729
+    checksum: sha256:89ff7f9412c524d44a74c1a04ea303659c690e62fb5cba72f0fa5d68890dd3d4
+    name: xz-libs
+    evr: 1:5.6.2-3.el10
+    sourcerpm: xz-5.6.2-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/zlib-ng-compat-2.2.2-1.el10.x86_64.rpm
+    repoid: baseos
+    size: 79028
+    checksum: sha256:00c1034f302e72bd53c78b79f6ed52528df80225d03e28f396d719288d1c0bfe
+    name: zlib-ng-compat
+    evr: 2.2.2-1.el10
+    sourcerpm: zlib-ng-2.2.2-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/CRB/x86_64/os/Packages/python3-wheel-0.41.2-5.el10.noarch.rpm
+    repoid: crb
+    size: 170877
+    checksum: sha256:560a80045e0914d9cd0b178fc93a7750b381ba8cc0e316438a9921a23b98b5e8
+    name: python3-wheel
+    evr: 1:0.41.2-5.el10
+    sourcerpm: python-wheel-0.41.2-5.el10.src.rpm
+  source: []
+  module_metadata: []

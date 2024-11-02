@@ -1,0 +1,28 @@
+contentOrigin:
+  repofiles:
+    - ./rpms.repo
+packages:
+  - ca-certificates
+  - crudini
+  - dumb-init
+  - frr
+  - gcc
+  - git-core
+  - glibc-common
+  - glibc-langpack-en
+  - glibc
+  - haproxy
+  - libffi-devel
+  - memcached
+  - openssl-devel # to build cryptography module
+  - procps-ng
+  - python3
+  - python3-devel
+  - python3-pip
+  - python3-setuptools
+  - python3-unbound
+  - python3-wheel
+  - sudo
+  - tzdata
+  - util-linux-user
+  - which
