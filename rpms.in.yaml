@@ -1,0 +1,20 @@
+contentOrigin:
+  repofiles:
+    - ./rpms.repo
+packages:
+  - ca-certificates
+  - centos-release-cloud # to pull the Centos SIG GPG key
+  - crudini
+  - dumb-init
+  - glibc-common
+  - glibc
+  - glibc-langpack-en
+  - procps-ng
+  - python3
+  - python3-pip
+  - python3-setuptools
+  - python3-wheel
+  - sudo
+  - tzdata
+  - util-linux-user
+  - which
