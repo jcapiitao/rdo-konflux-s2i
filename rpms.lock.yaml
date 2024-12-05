@@ -18,6 +18,13 @@ arches:
     name: dumb-init
     evr: 1.2.5-12.el10s
     sourcerpm: dumb-init-1.2.5-12.el10s.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cargo-1.81.0-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 7096050
+    checksum: sha256:8c58d8e21bc0bf2aca91e8fcd788751257997d16e689b8cc1bf4f511a913ff21
+    name: cargo
+    evr: 1.81.0-2.el10
+    sourcerpm: rust-1.81.0-2.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cpp-14.2.1-6.el10.x86_64.rpm
     repoid: appstream
     size: 13419037
@@ -207,6 +214,20 @@ arches:
     name: python3-unbound
     evr: 1.20.0-2.el10
     sourcerpm: unbound-1.20.0-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/rust-1.81.0-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 28876555
+    checksum: sha256:0d9d9f5420880a647854e66c794bb277d195d501701e3fc68e88da60aa3e6fea
+    name: rust
+    evr: 1.81.0-2.el10
+    sourcerpm: rust-1.81.0-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/rust-std-static-1.81.0-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 36016719
+    checksum: sha256:259488f5efc5beb9969caab481b96de1dd455ce7721c744630b892be6ccc645c
+    name: rust-std-static
+    evr: 1.81.0-2.el10
+    sourcerpm: rust-1.81.0-2.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/sudo-python-plugin-1.9.15-8.p5.el10.x86_64.rpm
     repoid: appstream
     size: 58712
@@ -893,6 +914,13 @@ arches:
     name: libzstd
     evr: 1.5.5-9.el10
     sourcerpm: zstd-1.5.5-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/llvm-libs-19.1.1-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 59112052
+    checksum: sha256:3bca515e5e957c9b8e06900f073577435b09f4426a80f374102ddbd7164e48c8
+    name: llvm-libs
+    evr: 19.1.1-5.el10
+    sourcerpm: llvm-19.1.1-5.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/lua-libs-5.4.6-7.el10.x86_64.rpm
     repoid: baseos
     size: 135025
@@ -1663,5 +1691,12 @@ arches:
     name: python3-wheel
     evr: 1:0.41.2-5.el10
     sourcerpm: python-wheel-0.41.2-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/SIGs/10-stream/extras/x86_64/extras-common/Packages/c/centos-release-cloud-1-1.el10s.noarch.rpm
+    repoid: extras-common
+    size: 8060
+    checksum: sha256:00811bec41b4e788721d10f9c6b27cddcf5ab30f05240c9244132b57a16589d5
+    name: centos-release-cloud
+    evr: 1-1.el10s
+    sourcerpm: centos-release-cloud-1-1.el10s.src.rpm
   source: []
   module_metadata: []
