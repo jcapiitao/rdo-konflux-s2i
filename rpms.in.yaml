@@ -3,7 +3,9 @@ contentOrigin:
     - ./rpms.repo
 packages:
   - ca-certificates
+  - cargo
   - crudini
+  - centos-release-cloud
   - dumb-init
   - frr
   - gcc
@@ -20,6 +22,7 @@ packages:
   - python3-devel
   - python3-pip
   - python3-setuptools
+  - rust
   - python3-unbound
   - python3-wheel
   - sudo
