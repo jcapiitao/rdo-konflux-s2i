@@ -1,0 +1,3 @@
+[submodule "containers/openstack-base/tcib"]
+	path = containers/openstack-base/tcib
+	url = https://github.com/openstack-k8s-operators/tcib.git
