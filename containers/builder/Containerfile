@@ -1,0 +1,20 @@
+FROM quay.io/centos/centos:stream10
+RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial-SHA256 /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Extras-SHA512 && dnf install -y centos-release-cloud && rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud
+RUN dnf install -y \
+        cairo-devel \
+        cairo-gobject-devel \
+        cargo \
+        gcc \
+        git-core \
+	gobject-introspection-devel \
+        krb5-devel \
+        libffi-devel \
+        libxml2-devel \
+        libxslt-devel \
+        make \
+        openssl-devel \
+        python3 \
+        python3-devel \
+        python3-pip \
+        rust && \
+    dnf clean all

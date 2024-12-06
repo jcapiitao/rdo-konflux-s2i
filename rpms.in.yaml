@@ -3,6 +3,9 @@ contentOrigin:
     - ./rpms.repo
 packages:
   - ca-certificates
+  - cairo-devel
+  - cairo-gobject-devel
+  - gobject-introspection-devel
   - cargo
   - crudini
   - centos-release-cloud
@@ -16,11 +19,13 @@ packages:
   - glibc
   - haproxy
   - jq
+  - krb5-devel
   - libffi-devel
   - libxml2-devel
   - libxslt-devel
+  - make
   - memcached
-  - openssl-devel # to build cryptography module
+  - openssl-devel
   - procps-ng
   - python3
   - python3-devel
