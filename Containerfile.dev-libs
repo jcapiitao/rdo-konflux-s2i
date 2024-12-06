@@ -10,8 +10,15 @@ RUN dnf update -y && \
     python3 -m pip install yq && \
     dnf install -y $(yq -r '.packages | join(" ")' /tmp/rpms.in.yaml) && \
     dnf clean all
+# FIXME: for some reason libxml2-devel needs to be installed again
+# it seems dnf does not install it in first transation, or maybe there is an issue with layering.
+RUN dnf install -y libxml2-devel && dnf clean all
 # pip_find_builddeps comes from https://github.com/containerbuildsystem/cachi2/blob/main/docs/pip.md#requirements-buildtxt
 RUN curl -L https://raw.githubusercontent.com/containerbuildsystem/cachito/master/bin/pip_find_builddeps.py -o /usr/bin/pip_find_builddeps && chmod u+x /usr/bin/pip_find_builddeps
 RUN python3 -m pip install -U pip && pip install pip-tools
 RUN cat /tmp/cachi2.env >> $HOME/.bashrc
 RUN echo "export PIP_CACHE_DIR=/tmp/cache/pip" >> $HOME/.bashrc
+# https://pip.pypa.io/en/stable/cli/pip_wheel/#cmdoption-use-pep517
+# https://peps.python.org/pep-0517
+# I think it's already the default in pip 23.3.2 (shipped in AppStream but need to double check)
+RUN echo "export PIP_USE_PEP517=true" >> $HOME/.bashrc
