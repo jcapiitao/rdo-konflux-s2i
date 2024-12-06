@@ -1,27 +1,16 @@
 FROM quay.io/centos/centos:stream10
+COPY . /src
+WORKDIR /src
+RUN curl -L https://trunk.rdoproject.org/centos10-master/dlrn-deps.repo -o /etc/yum.repos.d/dlrn-deps.repo
 RUN dnf update -y && \
     dnf install -y 'dnf-command(config-manager)' && \
     dnf config-manager --set-enabled crb && \
     dnf install -y \
-        python3 \
         python3-pip \
-        python3-devel \
-        gcc \
-        git-core \
-        make \
-        libffi-devel \
-        krb5-devel \
-        cairo-devel \
-        cairo-gobject-devel \
-	gobject-introspection-devel \
-        openssl-devel \
-        rust \
-        cargo \
-        libxml2 \
-        libxslt && \
-    dnf remove -y \
-        python3-setuptools \
-        python3-packaging && \
+	python3-devel \
+	jq && \
+    python3 -m pip install yq && \
+    dnf install -y $(yq -r '.packages | join(" ")' /src/rpms.in.yaml) && \
     dnf clean all
 # pip_find_builddeps comes from https://github.com/containerbuildsystem/cachi2/blob/main/docs/pip.md#requirements-buildtxt
 RUN curl -L https://raw.githubusercontent.com/containerbuildsystem/cachito/master/bin/pip_find_builddeps.py -o /usr/bin/pip_find_builddeps && chmod u+x /usr/bin/pip_find_builddeps
