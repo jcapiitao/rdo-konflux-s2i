@@ -1,5 +1,3 @@
-
-
 lock-rpms:
 	rpm-lockfile-prototype --bare rpms.in.yaml
 
@@ -10,7 +8,7 @@ pip-compile-runtime-deps: build-dev-libs-image
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
 		sh -c "pip-compile requirements.in -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt --generate-hashes --allow-unsafe --output-file=requirements.txt"
 
-pip-compile-buildtime-deps:
+pip-compile-buildtime-deps: build-dev-libs-image
 	> requirements-build-added-manually.in && \
 	echo "calver" >> requirements-build-added-manually.in && \
 	echo "Cython" >> requirements-build-added-manually.in && \
@@ -52,4 +50,3 @@ enter:
 		-w /src/workspace \
 		--network none \
 		localhost/s2i-cs10-dev-libs:latest
-
