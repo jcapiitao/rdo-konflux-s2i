@@ -1,0 +1,37 @@
+FROM quay.io/konflux-fedora/centos-cloud-sig/builder-centos10-epoxy@sha256:db9e27671a01b677e65e5d8f4a01e039df56b0e81dc441fe72e9f1c46417d4da as builder
+RUN python3 -m pip wheel --use-pep517 --wheel-dir=/src/wheels \
+	$PIP_FIND_LINKS/external-python-dateutil/python-dateutil-external-sha256-08d407b02a136389879339cf65e28756279d55960753574ca798ad336b946c00.tar.gz \
+	python-barbicanclient \
+	python-cinderclient \
+	python-designateclient \
+	python-glanceclient \
+	python-ironicclient \
+	python-keystoneclient \
+	python-manilaclient \
+	python-neutronclient \
+	python-novaclient \
+	python-observabilityclient \
+	python-octaviaclient \
+	python-openstackclient \
+	python-swiftclient \
+	pymemcache
+
+
+FROM quay.io/konflux-fedora/centos-cloud-sig/openstack-base-centos10-epoxy@sha256:a6cb1e956b2fe09e1db26bed3a3fdaae56180364606c1ac42997723aa2935b52
+COPY --from=builder /src/wheels /src/wheels
+USER root
+RUN python3 -m pip install --find-links=/src/wheels \
+	python-barbicanclient \
+	python-cinderclient \
+	python-designateclient \
+	python-glanceclient \
+	python-ironicclient \
+	python-keystoneclient \
+	python-manilaclient \
+	python-neutronclient \
+	python-novaclient \
+	python-observabilityclient \
+	python-octaviaclient \
+	python-openstackclient \
+	python-swiftclient \
+	pymemcache
