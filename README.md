@@ -36,15 +36,18 @@ make enter
 source /tmp/cachi2.env
 pip install ...
 ```
+## TODO
+- [ ] Move Containerfiles to multi-stage builds
+- [ ] Make cryptography wheel compilation work on hermetic env (or take advantage of python3-cryptography RPM) 
 
 ## Issues
-- [x] Konflux cannot verify RPM authenticity coming from [RDO Trunk centos10-epoxy repo](https://trunk.rdoproject.org/centos10-master/deps/latest/)
+1. Konflux cannot verify RPM authenticity coming from [RDO Trunk centos10-epoxy repo](https://trunk.rdoproject.org/centos10-master/deps/latest/)
     - Konflux enabled `gpgcheck` by default (c.f [see config line](https://github.com/containerbuildsystem/cachi2/blob/7f09150bc4587ffa58cced9c76ea8de1cfec023e/cachi2/core/package_managers/rpm/main.py#L451))
     - Solution: use official CentOS Stream [Cloud SiG repo](https://buildlogs.centos.org/centos/10-stream/cloud/x86_64/openstack-epoxy/) where the RPMs are signed by the CentOS infra tooling.
-- [x] DNF cannot verify the Cloud SiG RPMS as the Cloud SiG GPG pubkey is not yet shipped in CentOS Stream extras repo
+2. DNF cannot verify the Cloud SiG RPMS as the Cloud SiG GPG pubkey is not yet shipped in CentOS Stream extras repo
     - [built](https://cbs.centos.org/koji/taskinfo?taskID=4341441) and tagged in [testing](https://cbs.centos.org/koji/taskinfo?taskID=4350817) and [release](https://cbs.centos.org/koji/taskinfo?taskID=4350818)
-- [x] When building python from submodule repo and relying on [PBR](https://github.com/openstack/pbr) to guess version, it fails to get the right version.
+3. When building python from submodule repo and relying on [PBR](https://github.com/openstack/pbr) to guess version, it fails to get the right version.
     - that's because `git-clone` Tekton task performs a shallow clone of the submodule by fetching the latest commit ([see config](https://github.com/konflux-ci/build-definitions/blob/609f834ed3673445765d04e52844c1417e6ae065/task/git-clone/0.1/git-clone.yaml#L32)). But PBR expects a git tree with tags to guess the version, and PIP complains about it.
     - Solution: set defaut as [200](https://github.com/jcapiitao/rdo-konflux-s2i/blob/1cdf7b2728b591fc2e11562c3a1e7069a205b21c/.tekton/openstack-base-pull-request.yaml#L29) (could not find a way to set unlimited)
-- [ ] Building cryptography wheel requires access to public crates index, which is not possible in hermetic env.
+4. Building cryptography wheel requires access to public crates index, which is not possible in hermetic env.
     - for now I disabled hermetic env but I need to find a way to disallow cargo fetching public index or redirect it somehow to Cachi2.
