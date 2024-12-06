@@ -16,6 +16,8 @@ packages:
   - haproxy
   - jq
   - libffi-devel
+  - libxml2-devel
+  - libxslt-devel
   - memcached
   - openssl-devel # to build cryptography module
   - procps-ng

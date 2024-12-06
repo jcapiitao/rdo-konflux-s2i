@@ -25,6 +25,13 @@ arches:
     name: cargo
     evr: 1.81.0-2.el10
     sourcerpm: rust-1.81.0-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cmake-filesystem-3.30.5-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 25353
+    checksum: sha256:f8b2b727d820211a4991bcaa62fbb35c77342b14008527a22178cab23293c77a
+    name: cmake-filesystem
+    evr: 3.30.5-2.el10
+    sourcerpm: cmake-3.30.5-2.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cpp-14.2.1-6.el10.x86_64.rpm
     repoid: appstream
     size: 13419037
@@ -95,6 +102,13 @@ arches:
     name: libffi-devel
     evr: 3.4.4-9.el10
     sourcerpm: libffi-3.4.4-9.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libgpg-error-devel-1.50-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 73287
+    checksum: sha256:f6cfaca79c5f87644dbaf7157788dc3dbbce3e6239a19a40b4ce00126a30a011
+    name: libgpg-error-devel
+    evr: 1.50-2.el10
+    sourcerpm: libgpg-error-1.50-2.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libmpc-1.3.1-7.el10.x86_64.rpm
     repoid: appstream
     size: 72998
@@ -116,6 +130,27 @@ arches:
     name: libxkbcommon
     evr: 1.7.0-4.el10
     sourcerpm: libxkbcommon-1.7.0-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libxml2-devel-2.12.5-3.el10.x86_64.rpm
+    repoid: appstream
+    size: 547044
+    checksum: sha256:f2316d0606941f984b47e8709cb0b16e337d1d234e4fa23f1d6235bac2576f8c
+    name: libxml2-devel
+    evr: 2.12.5-3.el10
+    sourcerpm: libxml2-2.12.5-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libxslt-1.1.39-6.el10.x86_64.rpm
+    repoid: appstream
+    size: 194120
+    checksum: sha256:3ed5f2927446d9026c6f814b23a4747fae96bb9df122ba6e3755fc920d9f3cac
+    name: libxslt
+    evr: 1.1.39-6.el10
+    sourcerpm: libxslt-1.1.39-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libxslt-devel-1.1.39-6.el10.x86_64.rpm
+    repoid: appstream
+    size: 147798
+    checksum: sha256:05a85d31210e9d6672256b6ae80c3b954bbb8202ab08782730ce185e70a3b8b7
+    name: libxslt-devel
+    evr: 1.1.39-6.el10
+    sourcerpm: libxslt-1.1.39-6.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/libyang-2.1.148-2.el10.x86_64.rpm
     repoid: appstream
     size: 486276
@@ -256,6 +291,20 @@ arches:
     name: xkeyboard-config
     evr: 2.41-3.el10
     sourcerpm: xkeyboard-config-2.41-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/xz-devel-5.6.2-3.el10.x86_64.rpm
+    repoid: appstream
+    size: 65926
+    checksum: sha256:645150b266dfc22b68fdf36415b440b78d3af1c2e9f293e223dc716238e4e833
+    name: xz-devel
+    evr: 1:5.6.2-3.el10
+    sourcerpm: xz-5.6.2-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/zlib-ng-compat-devel-2.2.2-1.el10.x86_64.rpm
+    repoid: appstream
+    size: 39470
+    checksum: sha256:5ce78da8a202ab38c116305ebf323178c276aee9343cd91d1fed8a64149755d1
+    name: zlib-ng-compat-devel
+    evr: 2.2.2-1.el10
+    sourcerpm: zlib-ng-2.2.2-1.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/alternatives-1.30-2.el10.x86_64.rpm
     repoid: baseos
     size: 43107
@@ -767,6 +816,13 @@ arches:
     name: libgomp
     evr: 14.2.1-6.el10
     sourcerpm: gcc-14.2.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libgpg-error-1.50-2.el10.x86_64.rpm
+    repoid: baseos
+    size: 242041
+    checksum: sha256:b7d74c79f82abf581fdb5b9fbd0b3792640c26780652036be284347b7b339fff
+    name: libgpg-error
+    evr: 1.50-2.el10
+    sourcerpm: libgpg-error-1.50-2.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libidn2-2.3.7-3.el10.x86_64.rpm
     repoid: baseos
     size: 120747
