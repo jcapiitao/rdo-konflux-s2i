@@ -4,7 +4,7 @@ lock-rpms:
 build-dev-libs-image:
 	podman build . -f Containerfile.dev-libs --tag localhost/s2i-cs10-dev-libs:latest
 
-pip-compile-runtime-deps: build-dev-libs-image
+pip-compile-runtime-deps:
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
 		sh -c "pip-compile requirements.in -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt --generate-hashes --allow-unsafe --output-file=requirements.txt"
 
@@ -18,7 +18,7 @@ pip-compile-buildtime-deps: build-dev-libs-image
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
 		sh -c "pip-compile requirements-build.in requirements-build-added-manually.in -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt --allow-unsafe --generate-hashes --output-file=requirements-build.txt"
 
-pip-find-buildtime-deps: build-dev-libs-image
+pip-find-buildtime-deps:
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
 		sh -c "pip_find_builddeps requirements.txt --append --only-write-on-update -o requirements-build.in --ignore-errors" ; \
 
