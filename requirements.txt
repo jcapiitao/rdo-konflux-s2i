@@ -268,6 +268,7 @@ cliff==4.8.0 \
     # via
     #   -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt
     #   osc-lib
+    #   python-barbicanclient
     #   python-designateclient
     #   python-ironicclient
     #   python-neutronclient
@@ -534,6 +535,7 @@ keystoneauth1==5.8.0 \
     #   neutron-lib
     #   openstacksdk
     #   osc-lib
+    #   python-barbicanclient
     #   python-cinderclient
     #   python-designateclient
     #   python-glanceclient
@@ -1018,6 +1020,7 @@ oslo-i18n==6.5.0 \
     #   oslo-service
     #   oslo-utils
     #   oslo-versionedobjects
+    #   python-barbicanclient
     #   python-cinderclient
     #   python-glanceclient
     #   python-keystoneclient
@@ -1087,6 +1090,7 @@ oslo-serialization==5.6.0 \
     #   oslo-policy
     #   oslo-versionedobjects
     #   osprofiler
+    #   python-barbicanclient
     #   python-designateclient
     #   python-keystoneclient
     #   python-manilaclient
@@ -1120,6 +1124,7 @@ oslo-utils==8.0.0 \
     #   oslo-service
     #   oslo-versionedobjects
     #   osprofiler
+    #   python-barbicanclient
     #   python-cinderclient
     #   python-designateclient
     #   python-glanceclient
@@ -1208,6 +1213,7 @@ pbr==6.1.0 \
     #   oslo-serialization
     #   ovn-bgp-agent
     #   ovsdbapp
+    #   python-barbicanclient
     #   python-cinderclient
     #   python-designateclient
     #   python-glanceclient
@@ -1334,6 +1340,12 @@ pyroute2==0.7.12 \
     #   -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt
     #   -r requirements.in
     #   ovn-bgp-agent
+python-barbicanclient==7.0.0 \
+    --hash=sha256:316af38a76d65a4af9135c700a7f3a46e2a5ab0485e93969687f6b62317295c7 \
+    --hash=sha256:fea5c9dbcdf3ca2ad2c4abf7472a4cdd36123b5121ee267e09f332c8c1a680e6
+    # via
+    #   -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt
+    #   -r requirements.in
 python-cinderclient==9.6.0 \
     --hash=sha256:3a8a3a3eded306fd3051797398556ca174c8ddb51f6f8c6d8d14fc83fa2f8d54 \
     --hash=sha256:3fefde268252e52e30fe2773f658227a78c6dee378fcb132d31c86e6ec9ba238
@@ -1511,6 +1523,7 @@ requests==2.32.3 \
     #   oslo-config
     #   oslo-policy
     #   osprofiler
+    #   python-barbicanclient
     #   python-cinderclient
     #   python-designateclient
     #   python-glanceclient

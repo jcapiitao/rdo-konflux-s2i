@@ -14,6 +14,7 @@ packages:
   - glibc-langpack-en
   - glibc
   - haproxy
+  - jq
   - libffi-devel
   - memcached
   - openssl-devel # to build cryptography module

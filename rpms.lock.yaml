@@ -592,6 +592,13 @@ arches:
     name: jansson
     evr: 2.14-3.el10
     sourcerpm: jansson-2.14-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/jq-1.7.1-8.el10.x86_64.rpm
+    repoid: baseos
+    size: 205886
+    checksum: sha256:d6f9f70f834f99f348c659855aee5b69c2e64a83b179e01c24be18df6611096c
+    name: jq
+    evr: 1.7.1-8.el10
+    sourcerpm: jq-1.7.1-8.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/json-c-0.18-3.el10.x86_64.rpm
     repoid: baseos
     size: 46500
@@ -991,6 +998,13 @@ arches:
     name: ncurses-libs
     evr: 6.4-14.20240127.el10
     sourcerpm: ncurses-6.4-14.20240127.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/oniguruma-6.9.9-7.el10.x86_64.rpm
+    repoid: baseos
+    size: 221480
+    checksum: sha256:c28f845106466e544c03613cb93675a6f5e8b693937bd8fd1907370e0f3af1ee
+    name: oniguruma
+    evr: 6.9.9-7.el10
+    sourcerpm: oniguruma-6.9.9-7.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/openldap-2.6.7-5.el10.x86_64.rpm
     repoid: baseos
     size: 243198

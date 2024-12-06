@@ -10,19 +10,21 @@ pip-compile-runtime-deps: build-dev-libs-image
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
 		sh -c "pip-compile requirements.in -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt --generate-hashes --allow-unsafe --output-file=requirements.txt"
 
-add-manual-buildtime-deps:
-	echo "calver" >> requirements-build.in && \
-	echo "Cython" >> requirements-build.in && \
-	echo "docutils" >> requirements-build.in && \
-	echo "changelog-chug" >> requirements-build.in && \
+pip-compile-buildtime-deps:
+	> requirements-build-added-manually.in && \
+	echo "calver" >> requirements-build-added-manually.in && \
+	echo "Cython" >> requirements-build-added-manually.in && \
+	echo "docutils" >> requirements-build-added-manually.in && \
+	echo "changelog-chug" >> requirements-build-added-manually.in && \
+	echo "yq" >> requirements-build-added-manually.in && \
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
-		sh -c "pip-compile requirements-build.in --allow-unsafe --generate-hashes --output-file=requirements-build.txt"
+		sh -c "pip-compile requirements-build.in requirements-build-added-manually.in -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt --allow-unsafe --generate-hashes --output-file=requirements-build.txt"
 
-pip-compile-buildtime-deps: build-dev-libs-image
+pip-find-buildtime-deps: build-dev-libs-image
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
 		sh -c "pip_find_builddeps requirements.txt --append --only-write-on-update -o requirements-build.in --ignore-errors" ; \
 
-pin-python-deps: build-dev-libs-image pip-compile-runtime-deps pip-compile-buildtime-deps add-manual-buildtime-deps
+pin-python-deps: build-dev-libs-image pip-compile-runtime-deps pip-find-buildtime-deps pip-compile-buildtime-deps
 
 pull-python-deps:
 	rm -rf cachi2-output/ cachi2.env && \

@@ -59,13 +59,3 @@ typing-extensions
 wheel
 wheel>=0.36.2
 # <pip download failed, output may be incomplete!>
-calver
-Cython
-docutils
-calver
-Cython
-docutils
-calver
-Cython
-docutils
-changelog-chug

@@ -1,0 +1,10 @@
+FROM quay.io/centos/centos:stream10
+COPY . /src
+WORKDIR /src
+RUN rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-centosofficial-SHA256 /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Extras-SHA512 && dnf install -y centos-release-cloud && rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-SIG-Cloud
+RUN dnf install -y python3-pip python3-devel jq gcc && \
+    python3 -m pip install yq && \
+    dnf install -y $(yq -r '.packages | join(" ")' /src/rpms.in.yaml) && \
+    dnf clean all
+RUN python3 -m pip install --no-cache-dir --use-pep517 --no-binary :all: -r requirements-build.txt
+RUN python3 -m pip install --no-cache-dir --use-pep517 --no-binary :all: -r requirements.txt
