@@ -51,5 +51,4 @@ pip cache list
 3. When building python from submodule repo and relying on [PBR](https://github.com/openstack/pbr) to guess version, it fails to get the right version.
     - that's because `git-clone` Tekton task performs a shallow clone of the submodule by fetching the latest commit ([see config](https://github.com/konflux-ci/build-definitions/blob/609f834ed3673445765d04e52844c1417e6ae065/task/git-clone/0.1/git-clone.yaml#L32)). But PBR expects a git tree with tags to guess the version, and PIP complains about it.
     - Solution: set defaut as [200](https://github.com/jcapiitao/rdo-konflux-s2i/blob/1cdf7b2728b591fc2e11562c3a1e7069a205b21c/.tekton/openstack-base-pull-request.yaml#L29) (could not find a way to set unlimited)
-4. Building cryptography wheel requires access to public crates index, which is not possible in hermetic env.
-    - for now I disabled hermetic env but I need to find a way to disallow cargo fetching public index or redirect it somehow to Cachi2.
+4. https://github.com/jcapiitao/rdo-konflux-s2i/issues/26

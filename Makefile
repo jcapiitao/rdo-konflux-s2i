@@ -15,8 +15,10 @@ run-dev-libs-image: build-dev-libs-image
 		--volume s2i-cs10-dev-libs-cache:/tmp/cache:Z \
 		--volume .:/src/workspace:Z \
 		-w /src/workspace \
-		--network none \
 		localhost/s2i-cs10-dev-libs:latest
+	        # FIXME: remove network once hermetic build reenabled
+		# https://github.com/jcapiitao/rdo-konflux-s2i/issues/26
+		#--network none \
 
 pip-compile-runtime-deps: build-dev-libs-image
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
