@@ -513,9 +513,9 @@ jsonpointer==3.0.0 \
     # via
     #   -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt
     #   jsonpatch
-jsonschema==4.19.2 \
-    --hash=sha256:c9ff4d7447eed9592c23a12ccee508baf0dd0d59650615e847feb6cdca74f392 \
-    --hash=sha256:eee9e502c788e89cb166d4d37f43084e3b64ab405c795c03d343a4dbc2c810fc
+jsonschema==4.23.0 \
+    --hash=sha256:d71497fef26351a33265337fa77ffeb82423f3ea21283cd9467bb03999266bc4 \
+    --hash=sha256:fbadb6f8b144a8f8cf9f0b89ba94501d143e50411a1278633f56a7acf7fd5566
     # via
     #   -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt
     #   python-designateclient
