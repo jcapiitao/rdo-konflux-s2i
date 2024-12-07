@@ -2,7 +2,11 @@ lock-rpms:
 	rpm-lockfile-prototype --bare rpms.in.yaml
 
 build-dev-libs-image:
-	podman build . -f Containerfile.dev-libs --volume "$(shell pwd)/rpms.in.yaml:/tmp/rpms.in.yaml:z" --volume "$(shell pwd)/cachi2.env:/tmp/cachi2.env:z" --tag localhost/s2i-cs10-dev-libs:latest
+	podman build . \
+		--file Containerfile.dev-libs \
+		--volume "$(realpath ./rpms.in.yaml)":/tmp/rpms.in.yaml:Z \
+		--volume "$(realpath ./cachi2.env)":/tmp/cachi2.env:Z \
+		--tag localhost/s2i-cs10-dev-libs:latest
 
 pip-compile-runtime-deps: build-dev-libs-image
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
