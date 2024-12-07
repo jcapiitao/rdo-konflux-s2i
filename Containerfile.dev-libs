@@ -12,7 +12,7 @@ RUN dnf update -y && \
     dnf clean all
 # FIXME: for some reason libxml2-devel needs to be installed again
 # it seems dnf does not install it in first transation, or maybe there is an issue with layering.
-RUN dnf install -y libxml2-devel && dnf clean all
+RUN dnf install -y libxml2-devel libxslt-devel && dnf clean all
 # pip_find_builddeps comes from https://github.com/containerbuildsystem/cachi2/blob/main/docs/pip.md#requirements-buildtxt
 RUN curl -L https://raw.githubusercontent.com/containerbuildsystem/cachito/master/bin/pip_find_builddeps.py -o /usr/bin/pip_find_builddeps && chmod u+x /usr/bin/pip_find_builddeps
 RUN python3 -m pip install -U pip && pip install pip-tools
