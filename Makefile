@@ -12,6 +12,7 @@ run-dev-libs-image: build-dev-libs-image
 	podman run --rm -it \
 		--volume "$(realpath ./cachi2-output)":/tmp/cachi2-output:Z \
 		--volume "$(realpath ./cachi2.env)":/tmp/cachi2.env:Z \
+		--volume s2i-cs10-dev-libs-cache:/tmp/cache:Z \
 		--volume .:/src/workspace:Z \
 		-w /src/workspace \
 		--network none \

@@ -32,9 +32,11 @@ make install-python-deps
 #### To troubleshoot
 If you want to operate inside the Cachi2 env.
 Note that cachi2 env variables are already exported in shell env.
+The cache dir is stored in a volume so wheels can be reused to speed up the development. If you want to build the wheels from scratch, please clear the cache directory with `pip cache purge` (see [pip cache doc](https://pip.pypa.io/en/stable/cli/pip_cache/)) for more details).
 ```
 make run-dev-libs-image
-pip install ...
+pip wheel -v lxml
+pip cache list
 ```
 ## TODO
 - [ ] Move Containerfiles to multi-stage builds
