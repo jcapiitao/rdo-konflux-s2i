@@ -31,9 +31,9 @@ make install-python-deps
 ```
 #### To troubleshoot
 If you want to operate inside the Cachi2 env.
+Note that cachi2 env variables are already exported in shell env.
 ```
-make enter
-source /tmp/cachi2.env
+make run-dev-libs-image
 pip install ...
 ```
 ## TODO

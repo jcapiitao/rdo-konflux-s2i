@@ -8,6 +8,15 @@ build-dev-libs-image:
 		--volume "$(realpath ./cachi2.env)":/tmp/cachi2.env:Z \
 		--tag localhost/s2i-cs10-dev-libs:latest
 
+run-dev-libs-image:
+	podman run --rm -it \
+		--volume "$(realpath ./cachi2-output)":/tmp/cachi2-output:Z \
+		--volume "$(realpath ./cachi2.env)":/tmp/cachi2.env:Z \
+		--volume .:/src/workspace:Z \
+		-w /src/workspace \
+		--network none \
+		localhost/s2i-cs10-dev-libs:latest
+
 pip-compile-runtime-deps: build-dev-libs-image
 	podman run --rm --volume .:/src/workspace:Z -w /src/workspace localhost/s2i-cs10-dev-libs:latest \
 		sh -c "pip-compile requirements.in -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt --generate-hashes --allow-unsafe --output-file=requirements.txt"
@@ -45,12 +54,3 @@ install-python-deps: build-dev-libs-image
 		--tag localhost/install-requirements:latest
 
 validate-python-deps: pin-python-deps pull-python-deps install-python-deps
-
-enter:
-	podman run --rm -it \
-		--volume "$(realpath ./cachi2-output)":/tmp/cachi2-output:Z \
-		--volume "$(realpath ./cachi2.env)":/tmp/cachi2.env:Z \
-		--volume .:/src/workspace:Z \
-		-w /src/workspace \
-		--network none \
-		localhost/s2i-cs10-dev-libs:latest
