@@ -527,9 +527,9 @@ jsonschema-specifications==2024.10.1 \
     # via
     #   -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt
     #   jsonschema
-keystoneauth1==5.8.0 \
-    --hash=sha256:3157c212e121164de64d63e5ef7e1daad2bd3649a68de1e971b76877019ef1c4 \
-    --hash=sha256:e69dff80c509ab64d4de4494658d914e81f26af720828dc584ceee74ecd666d9
+keystoneauth1==5.9.1 \
+    --hash=sha256:71b98835aec72a01f71c5b919c3193dac95342555e89aa35c86d3d86c4ff5f73 \
+    --hash=sha256:fb0c66d842d5b964752264fff20b3b4ab73610d66d9b8d20d0dcf796ba09dc43
     # via
     #   -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt
     #   neutron-lib
