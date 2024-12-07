@@ -18,6 +18,7 @@ RUN curl -L https://raw.githubusercontent.com/containerbuildsystem/cachito/maste
 RUN python3 -m pip install -U pip && pip install pip-tools
 RUN cat /tmp/cachi2.env >> $HOME/.bashrc
 RUN echo "export PIP_CACHE_DIR=/tmp/cache/pip" >> $HOME/.bashrc
+RUN echo "export PIP_WHEEL_DIR=/tmp/" >> $HOME/.bashrc
 # https://pip.pypa.io/en/stable/cli/pip_wheel/#cmdoption-use-pep517
 # https://peps.python.org/pep-0517
 # I think it's already the default in pip 23.3.2 (shipped in AppStream but need to double check)
