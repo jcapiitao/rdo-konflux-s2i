@@ -11,6 +11,10 @@ ovn-bgp-agent
 pymemcache
 python-barbicanclient
 python-cinderclient
+# FIXME: loosen setuptools_scm https://github.com/jcapiitao/rdo-konflux-s2i/issues/25
+# https://github.com/jcapiitao/dateutil/archive/refs/tags/2.9.0.post0.tar.gz
+# the tarball below is the result of python "setup.py sdist" of the GH tarball
+python-dateutil @ https://jcapitao.fedorapeople.org/sdist/python-dateutil-2.9.0.post0.tar.gz
 python-designateclient
 python-glanceclient 
 python-ironicclient
