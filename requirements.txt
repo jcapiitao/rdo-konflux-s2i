@@ -1357,11 +1357,11 @@ python-daemon==3.1.2 \
     --hash=sha256:b906833cef63502994ad48e2eab213259ed9bb18d54fa8774dcba2ff7864cec6 \
     --hash=sha256:f7b04335adc473de877f5117e26d5f1142f4c9f7cd765408f0877757be5afbf4
     # via ansible-runner
-python-dateutil==2.9.0.post0 \
-    --hash=sha256:37dd54208da7e1cd875388217d5e00ebd4179249f90fb72437e91a35459a0ad3 \
-    --hash=sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427
+python-dateutil @ https://jcapitao.fedorapeople.org/sdist/python-dateutil-2.9.0.post0.tar.gz \
+    --hash=sha256:08d407b02a136389879339cf65e28756279d55960753574ca798ad336b946c00
     # via
     #   -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt
+    #   -r requirements.in
     #   oslo-log
 python-designateclient==6.1.0 \
     --hash=sha256:1adc2a074b30d842cf9787f53310c37949195bf4e34da3984e5635b7b8a4689c \
