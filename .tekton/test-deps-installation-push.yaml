@@ -9,12 +9,13 @@ metadata:
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch == "main" &&
       (
           "requirements*".pathChanged() ||
+          "containers/test-deps-installation/Containerfile".pathChanged() ||
           "rpms*".pathChanged()
       )
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: rdo-centos10-epoxy
-    pipelines.appstudio.openshift.io/type: build
+    pipelines.appstudio.openshift.io/type: test
   name: test-deps-installation-centos10-epoxy-on-push
   namespace: centos-cloud-sig
 spec:
