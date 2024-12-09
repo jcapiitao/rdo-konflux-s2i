@@ -27,6 +27,7 @@ RUN sed -ri '/^(passwd:|group:)/ s/systemd//g' /etc/nsswitch.conf
 RUN dnf -y reinstall which && rpm -e --nodeps tzdata && dnf -y install tzdata
 RUN mkdir -p /openstack
 RUN dnf update -y && dnf clean all && rm -rf /var/cache/dnf
+RUN echo test
 STOPSIGNAL SIGTERM
 ENTRYPOINT ["dumb-init", "--single-child", "--"]
 CMD ["kolla_start"]
