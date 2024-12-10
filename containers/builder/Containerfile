@@ -5,6 +5,7 @@ RUN dnf install -y \
         cairo-gobject-devel \
         cargo \
         gcc \
+        gcc-c++ \
         git-core \
 	gobject-introspection-devel \
         krb5-devel \
