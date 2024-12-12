@@ -15,6 +15,7 @@ metadata:
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: rdo-centos10-epoxy
+    appstudio.openshift.io/component: test-deps-installation-centos10-epoxy
     pipelines.appstudio.openshift.io/type: build
   name: test-deps-installation-centos10-epoxy-on-pull-request
   namespace: centos-cloud-sig
