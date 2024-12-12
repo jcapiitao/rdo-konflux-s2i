@@ -18,6 +18,7 @@ packages:
   - glibc-langpack-en
   - glibc
   - haproxy
+  - httpd-devel
   - jq
   - krb5-devel
   - libffi-devel
