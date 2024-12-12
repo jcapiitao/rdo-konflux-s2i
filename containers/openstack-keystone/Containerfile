@@ -1,0 +1,63 @@
+FROM quay.io/konflux-fedora/centos-cloud-sig/builder-centos10-epoxy@sha256:8c5bb954ca38e8f4442186b9e234d9255d51ff8410129f083f288c79346321fe as builder
+COPY . /src/
+#source /tmp/cachi2.env && export PIP_CACHE_DIR=/tmp/cache/pip && 
+RUN python3 -m pip wheel --use-pep517 --wheel-dir=/src/wheels \
+	$PIP_FIND_LINKS/external-python-dateutil/python-dateutil-external-sha256-08d407b02a136389879339cf65e28756279d55960753574ca798ad336b946c00.tar.gz \
+        /src/containers/openstack-keystone/keystone \
+        ldappool \
+        mod-wsgi \
+        requests-kerberos
+
+FROM quay.io/konflux-fedora/centos-cloud-sig/openstack-dependencies-centos10-epoxy@sha256:d18f72fae9c2c7bb892ae639c5494db613ce40e5515e4fc8136de59ebf2bb106
+USER root
+COPY . /src/
+COPY --from=builder /src/wheels /src/wheels
+#source /tmp/cachi2.env && export PIP_CACHE_DIR=/tmp/cache/pip && 
+RUN python3 -m pip install --find-links=/src/wheels \
+        keystone \
+        ldappool \
+        mod-wsgi \
+        requests-kerberos
+
+# FIXME: mod_auth_mellon RPM is missing (it's available in cs9-appstream but not cs10-appstream)
+RUN dnf -y install httpd mod_auth_gssapi mod_auth_openidc mod_ssl systemd-udev && dnf clean all && rm -rf /var/cache/dnf
+
+RUN bash /usr/local/bin/uid_gid_manage keystone
+
+RUN getent group keystone >/dev/null || groupadd -r --gid 163 keystone
+RUN getent passwd keystone >/dev/null || useradd --uid 163 -r -g keystone -d /var/lib/keystone -s /sbin/nologin  \
+-c "OpenStack Keystone Daemons" keystone
+
+RUN install -d -m 755 /usr/share/keystone
+RUN oslo-config-generator --config-file=/src/containers/openstack-keystone/keystone/config-generator/keystone.conf
+RUN oslo-config-generator --config-file=/src/containers/openstack-keystone/keystone/config-generator/keystone.conf --format yaml --output-file=/usr/share/keystone/keystone-schema.yaml
+RUN oslo-config-generator --config-file=/src/containers/openstack-keystone/keystone/config-generator/keystone.conf --format json --output-file=/usr/share/keystone/keystone-schema.json
+
+RUN install -d -m 755 /etc/keystone
+RUN install -d -m 755 /etc/keystone/policy.d
+RUN install -p -D -m 640 etc/keystone.conf.sample /etc/keystone/keystone.conf
+RUN install -p -D -m 644 /src/containers/openstack-keystone/keystone-dist.conf /usr/share/keystone/keystone-dist.conf
+RUN install -p -D -m 640 /src/containers/openstack-keystone/keystone/etc/logging.conf.sample /etc/keystone/logging.conf
+RUN install -p -D -m 640 /src/containers/openstack-keystone/keystone/etc/default_catalog.templates /etc/keystone/default_catalog.templates
+RUN install -p -D -m 640 /src/containers/openstack-keystone/keystone/etc/sso_callback_template.html /etc/keystone/sso_callback_template.html
+RUN install -p -D -m 644 /src/containers/openstack-keystone/openstack-keystone.logrotate /etc/logrotate.d/openstack-keystone
+
+# systemd configuration
+RUN install -d -m 755 /usr/lib/sysctl.d
+RUN install -p -D -m 644 /src/containers/openstack-keystone/openstack-keystone.sysctl /usr/lib/sysctl.d/openstack-keystone.conf && /usr/lib/systemd/systemd-sysctl openstack-keystone.conf
+
+RUN install -p -D -m 755 /src/containers/openstack-keystone/keystone/tools/sample_data.sh /usr/share/keystone/sample_data.sh
+RUN install -p -D -m 755 /src/containers/openstack-keystone/openstack-keystone-sample-data /usr/bin/openstack-keystone-sample-data
+RUN install -p -D -m 644 /src/containers/openstack-keystone/keystone/httpd/wsgi-keystone.conf /usr/share/keystone/
+RUN install -d -m 755 /var/lib/keystone
+
+# logging configuration
+RUN install -d -m 755 /var/log/keystone
+RUN touch /var/log/keystone/keystone.log && chmod 660 /var/log/keystone/keystone.log && chown root:keystone /var/log/keystone/keystone.log
+
+RUN mkdir -p /var/www/cgi-bin/keystone && chown -R keystone /var/www/cgi-bin/keystone
+RUN cp -a /usr/local/bin/keystone-wsgi-public /var/www/cgi-bin/keystone/main
+RUN cp -a /usr/local/bin/keystone-wsgi-admin /var/www/cgi-bin/keystone/admin
+RUN cp -a /usr/local/bin/keystone-* /usr/bin/
+RUN sed -i -r 's,^(Listen 80),#\1,' /etc/httpd/conf/httpd.conf
+RUN sed -i -r 's,^(Listen 443),#\1,' /etc/httpd/conf.d/ssl.conf

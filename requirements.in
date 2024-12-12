@@ -2,6 +2,9 @@ ansible-core
 ansible-runner
 flit_core
 importlib-resources
+keystone
+ldappool
+mod-wsgi
 netifaces
 osc-lib
 oslo.concurrency
@@ -28,4 +31,5 @@ python-openstackclient
 python-swiftclient
 pyroute2
 PyYAML
+requests-kerberos
 tenacity

@@ -1,3 +1,6 @@
 [submodule "containers/openstack-base/tcib"]
 	path = containers/openstack-base/tcib
 	url = https://github.com/openstack-k8s-operators/tcib.git
+[submodule "containers/openstack-keystone/keystone"]
+	path = containers/openstack-keystone/keystone
+	url = https://opendev.org/openstack/keystone.git

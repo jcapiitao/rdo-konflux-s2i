@@ -15,9 +15,7 @@ build==1.2.2.post1 \
 calver==2022.6.26 \
     --hash=sha256:a1d7fcdd67797afc52ee36ffb8c8adf6643173864306547bfd1380cbce6310a0 \
     --hash=sha256:e05493a3b17517ef1748fbe610da11f10485faa7c416b9d33fd4a52d74894f8b
-    # via
-    #   -r requirements-build-added-manually.in
-    #   -r requirements-build.in
+    # via -r requirements-build.in
 cffi==1.17.1 \
     --hash=sha256:045d61c734659cc045141be4bae381a41d89b741f795af1dd018bfb532fd0df8 \
     --hash=sha256:0984a4925a435b1da406122d4d7968dd861c1385afe3b45ba82b750f229811e2 \
@@ -160,9 +158,7 @@ cython==3.0.11 \
     --hash=sha256:eeb6860b0f4bfa402de8929833fe5370fa34069c7ebacb2d543cb017f21fb891 \
     --hash=sha256:f3953d2f504176f929862e5579cfc421860c33e9707f585d70d24e1096accdf7 \
     --hash=sha256:f988f7f8164a6079c705c39e2d75dbe9967e3dacafe041420d9af7b9ee424162
-    # via
-    #   -r requirements-build-added-manually.in
-    #   -r requirements-build.in
+    # via -r requirements-build.in
 docutils==0.21.2 \
     --hash=sha256:3a6b18732edf182daa3cd12775bbb338cf5691468f91eeeb109deff6ebfa986f \
     --hash=sha256:dafca5b9e384f0e419294eb4d2ff9fa826435bf15f15b7bd45723e8ad76811b2

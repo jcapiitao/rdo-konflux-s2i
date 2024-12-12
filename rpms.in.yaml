@@ -19,6 +19,7 @@ packages:
   - glibc
   - haproxy
   - httpd-devel
+  - httpd
   - jq
   - krb5-devel
   - libffi-devel
@@ -26,16 +27,20 @@ packages:
   - libxslt-devel
   - make
   - memcached
+  - mod_auth_gssapi
+  - mod_auth_openidc
+  - mod_ssl
   - openssl-devel
   - procps-ng
   - python3
   - python3-devel
   - python3-pip
   - python3-setuptools
-  - rust
   - python3-unbound
   - python3-wheel
+  - rust
   - sudo
+  - systemd-udev
   - tzdata
   - util-linux-user
   - which

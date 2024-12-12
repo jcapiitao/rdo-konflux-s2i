@@ -33,8 +33,6 @@ pip-compile-runtime-deps: build-dev-libs-image
 
 pip-compile-buildtime-deps: build-dev-libs-image
 	> requirements-build-added-manually.in && \
-	echo "calver" >> requirements-build-added-manually.in && \
-	echo "Cython" >> requirements-build-added-manually.in && \
 	echo "docutils" >> requirements-build-added-manually.in && \
 	echo "changelog-chug" >> requirements-build-added-manually.in && \
 	echo "yq" >> requirements-build-added-manually.in && \

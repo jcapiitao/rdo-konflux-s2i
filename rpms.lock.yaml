@@ -130,6 +130,20 @@ arches:
     name: cargo
     evr: 1.82.0-1.el10
     sourcerpm: rust-1.82.0-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/centos-logos-httpd-100.2-1.el10.noarch.rpm
+    repoid: appstream
+    size: 875054
+    checksum: sha256:8b0ecdf1f68e7f576fe2fa09e49ed0216bda60a3b9d1191151513c5b05df0d1c
+    name: centos-logos-httpd
+    evr: 100.2-1.el10
+    sourcerpm: centos-logos-100.2-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cjose-0.6.2.2-7.el10.x86_64.rpm
+    repoid: appstream
+    size: 223126
+    checksum: sha256:16c7041d2d8b1da1a5da5ed5e1064c32b1ce0e0ff2cf869a409948eadeb6e266
+    name: cjose
+    evr: 0.6.2.2-7.el10
+    sourcerpm: cjose-0.6.2.2-7.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/cmake-filesystem-3.30.5-2.el10.x86_64.rpm
     repoid: appstream
     size: 25353
@@ -277,6 +291,13 @@ arches:
     name: harfbuzz-icu
     evr: 8.4.0-5.el10
     sourcerpm: harfbuzz-8.4.0-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/httpd-2.4.62-5.el10.x86_64.rpm
+    repoid: appstream
+    size: 50888
+    checksum: sha256:41f428a1a5dc83ca27803d0359126bbc9d51f7144c3f5dcd63e6ba0f51eb9f13
+    name: httpd
+    evr: 2.4.62-5.el10
+    sourcerpm: httpd-2.4.62-5.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/httpd-core-2.4.62-5.el10.x86_64.rpm
     repoid: appstream
     size: 1590995
@@ -564,6 +585,41 @@ arches:
     name: memcached
     evr: 1.6.23-7.el10
     sourcerpm: memcached-1.6.23-7.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/mod_auth_gssapi-1.6.5-8.el10.x86_64.rpm
+    repoid: appstream
+    size: 76383
+    checksum: sha256:71b57bc8f6f75773f2a686ade205f390facf0269aefc2fc0f78e703ffd6b541b
+    name: mod_auth_gssapi
+    evr: 1.6.5-8.el10
+    sourcerpm: mod_auth_gssapi-1.6.5-8.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/mod_auth_openidc-2.4.15-4.el10.x86_64.rpm
+    repoid: appstream
+    size: 236298
+    checksum: sha256:4259339401eccd253eaae94b6ec886c195e6d09fa3731dea2e4db60e75636218
+    name: mod_auth_openidc
+    evr: 2.4.15-4.el10
+    sourcerpm: mod_auth_openidc-2.4.15-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/mod_http2-2.0.29-2.el10.x86_64.rpm
+    repoid: appstream
+    size: 169518
+    checksum: sha256:b7bb73966adc3e8f09fe1291366be4239698bd43e1d1c54d3bba33cfd3a0b60a
+    name: mod_http2
+    evr: 2.0.29-2.el10
+    sourcerpm: mod_http2-2.0.29-2.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/mod_lua-2.4.62-5.el10.x86_64.rpm
+    repoid: appstream
+    size: 61842
+    checksum: sha256:781436193f72e08bd081836fc1e97f8b094870dcc6b6d40a60b96b84d72980d9
+    name: mod_lua
+    evr: 2.4.62-5.el10
+    sourcerpm: httpd-2.4.62-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/mod_ssl-2.4.62-5.el10.x86_64.rpm
+    repoid: appstream
+    size: 113333
+    checksum: sha256:ca7f0459b7b37fb621acafec2c2b7470cb0ede1a0e65ed3f5f5c3176f01fb552
+    name: mod_ssl
+    evr: 1:2.4.62-5.el10
+    sourcerpm: httpd-2.4.62-5.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/net-snmp-5.9.4-14.el10.x86_64.rpm
     repoid: appstream
     size: 317238
@@ -746,6 +802,13 @@ arches:
     name: rust-std-static
     evr: 1.82.0-1.el10
     sourcerpm: rust-1.82.0-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/sscg-3.0.5-9.el10.x86_64.rpm
+    repoid: appstream
+    size: 47838
+    checksum: sha256:1d0e8f365a2fe2f46e18d7bf4bdda9d7a40248a6068b8e2d85083299a992d465
+    name: sscg
+    evr: 3.0.5-9.el10
+    sourcerpm: sscg-3.0.5-9.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/AppStream/x86_64/os/Packages/sudo-python-plugin-1.9.15-8.p5.el10.x86_64.rpm
     repoid: appstream
     size: 58712
@@ -1264,6 +1327,27 @@ arches:
     name: json-c
     evr: 0.18-3.el10
     sourcerpm: json-c-0.18-3.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kbd-2.6.4-6.el10.x86_64.rpm
+    repoid: baseos
+    size: 442515
+    checksum: sha256:0839699dd58b9a1d23f4b48efdc84e6c484470ab4ece72076495910f8711ba17
+    name: kbd
+    evr: 2.6.4-6.el10
+    sourcerpm: kbd-2.6.4-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kbd-legacy-2.6.4-6.el10.noarch.rpm
+    repoid: baseos
+    size: 606558
+    checksum: sha256:99a983ba5b845b99bf2078da740c911ed0027f2281a1d9c28832151d3e0cba6d
+    name: kbd-legacy
+    evr: 2.6.4-6.el10
+    sourcerpm: kbd-2.6.4-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kbd-misc-2.6.4-6.el10.noarch.rpm
+    repoid: baseos
+    size: 1773924
+    checksum: sha256:00c77c2f354f168bcb8563771db2df9b3f929265ef28634ab8c3939ff8491eb0
+    name: kbd-misc
+    evr: 2.6.4-6.el10
+    sourcerpm: kbd-2.6.4-6.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/keyutils-libs-1.6.3-4.el10.x86_64.rpm
     repoid: baseos
     size: 33309
@@ -1271,6 +1355,13 @@ arches:
     name: keyutils-libs
     evr: 1.6.3-4.el10
     sourcerpm: keyutils-1.6.3-4.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kmod-31-10.el10.x86_64.rpm
+    repoid: baseos
+    size: 140255
+    checksum: sha256:75a9bc75ca5a2ef614de8921ade37a7876f35cdf98a71d57a708a1b0fbd4cc21
+    name: kmod
+    evr: 31-10.el10
+    sourcerpm: kmod-31-10.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/kmod-libs-31-10.el10.x86_64.rpm
     repoid: baseos
     size: 72387
@@ -1467,6 +1558,13 @@ arches:
     name: libnghttp2
     evr: 1.64.0-1.el10
     sourcerpm: nghttp2-1.64.0-1.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libpath_utils-0.2.1-58.el10.x86_64.rpm
+    repoid: baseos
+    size: 30441
+    checksum: sha256:6a0ba3781149928c2fb9f6352b4e378a033614bf718c1834520af19b42fd6313
+    name: libpath_utils
+    evr: 0.2.1-58.el10
+    sourcerpm: ding-libs-0.6.2-58.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libpkgconf-2.1.0-3.el10.x86_64.rpm
     repoid: baseos
     size: 40023
@@ -1551,6 +1649,13 @@ arches:
     name: libstdc++
     evr: 14.2.1-6.el10
     sourcerpm: gcc-14.2.1-6.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libtalloc-2.4.2-106.el10.x86_64.rpm
+    repoid: baseos
+    size: 32316
+    checksum: sha256:2c465ea403aece325b5c8aaa23f1f1c97bf259b509949c0bdf5f7797be730ddd
+    name: libtalloc
+    evr: 2.4.2-106.el10
+    sourcerpm: libtalloc-2.4.2-106.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/libtasn1-4.19.0-9.el10.x86_64.rpm
     repoid: baseos
     size: 76829
@@ -2377,6 +2482,13 @@ arches:
     name: systemd-pam
     evr: 256-18.el10
     sourcerpm: systemd-256-18.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/systemd-udev-256-18.el10.x86_64.rpm
+    repoid: baseos
+    size: 2266202
+    checksum: sha256:0dc96556c9fbe4358781cd839674ee179209ff89297fba692367b9c3a972535e
+    name: systemd-udev
+    evr: 256-18.el10
+    sourcerpm: systemd-256-18.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/tar-1.35-5.el10.x86_64.rpm
     repoid: baseos
     size: 884451
@@ -2384,6 +2496,13 @@ arches:
     name: tar
     evr: 2:1.35-5.el10
     sourcerpm: tar-1.35-5.el10.src.rpm
+  - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/tpm2-tss-4.1.3-5.el10.x86_64.rpm
+    repoid: baseos
+    size: 448828
+    checksum: sha256:863c36c073642a98f267bd3503fb2a505412341f2ae3c828f80e8188b4dc6d97
+    name: tpm2-tss
+    evr: 4.1.3-5.el10
+    sourcerpm: tpm2-tss-4.1.3-5.el10.src.rpm
   - url: https://mirror.stream.centos.org/10-stream/BaseOS/x86_64/os/Packages/tzdata-2024a-3.el10.noarch.rpm
     repoid: baseos
     size: 858793
