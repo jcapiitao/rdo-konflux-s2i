@@ -997,7 +997,7 @@ oslo-context==5.7.0 \
     #   oslo-middleware
     #   oslo-policy
     #   oslo-versionedobjects
-oslo-db==17.0.0 \
+oslo-db==17.1.0 \
     --hash=sha256:9cf1ba9e43b4bbbde7994641af6d06c45f7112a7e1476f14dd0b27b9a8eb107d \
     --hash=sha256:b9792ca5bffeed7362d321d6ee210b290094f53a4a56325d60d9535bac6309b2
     # via
@@ -2066,3 +2066,6 @@ setuptools==75.6.0 \
     #   paste
     #   pecan
     #   testtools
+oslo.db==17.1.0 \
+    --hash=sha256:6c416dd86e2aa6c444380b46091167d3c83d01a437c726342e8bb9e7357bd8c4 \
+    --hash=sha256:89c44467fa98f324535adaa884e35176e741de4a2025cbdf3bacd014574da07f
