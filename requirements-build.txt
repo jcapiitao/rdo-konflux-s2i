@@ -362,9 +362,9 @@ yq==3.4.3 \
     # via -r requirements-build-added-manually.in
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==69.0.2 \
-    --hash=sha256:1e8fdff6797d3865f37397be788a4e3cba233608e9b509382a2777d25ebde7f2 \
-    --hash=sha256:735896e78a4742605974de002ac60562d286fa8051a7e2299445e8e8fbb01aa6
+setuptools==69.5.1 \
+    --hash=sha256:6c1fccdac05a97e598fb0ae3bbed5904ccb317337a51139dcd51453611bbb987 \
+    --hash=sha256:c636ac361bc47580504644275c9ad802c50415c7522212252c033bd15f301f32
     # via
     #   -r requirements-build.in
     #   setuptools-rust
