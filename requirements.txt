@@ -294,9 +294,9 @@ cliff==4.8.0 \
     #   python-observabilityclient
     #   python-octaviaclient
     #   python-openstackclient
-cmd2==2.5.7 \
-    --hash=sha256:0219e2bb75075fa16deffb88edf86efdd2a87439d1fa7b94fdea4b929a3dc914 \
-    --hash=sha256:7e5856fd1a75716288d4638e68946f9697404f377dfdeeddc19045c7012de9b7
+cmd2==2.5.8 \
+    --hash=sha256:aeb6eb6cd6d783bb7d92d37aa920bcfa7379690ba9ab1188576562f73a13471c \
+    --hash=sha256:ddf29beaa7c9d4e9806eefad528a59c372ca97b4c0d83e019fef0e37c44f4497
     # via
     #   -c https://raw.githubusercontent.com/openstack/requirements/refs/heads/master/upper-constraints.txt
     #   cliff
