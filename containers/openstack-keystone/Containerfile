@@ -1,4 +1,7 @@
 FROM quay.io/konflux-fedora/centos-cloud-sig/builder-centos10-epoxy@sha256:8c5bb954ca38e8f4442186b9e234d9255d51ff8410129f083f288c79346321fe as builder
+ENV VIRTUAL_ENV="/opt/venv" \
+    PATH="/opt/venv/bin:$PATH"
+RUN python3 -m venv /opt/venv
 COPY . /src/
 #source /tmp/cachi2.env && export PIP_CACHE_DIR=/tmp/cache/pip && 
 RUN python3 -m pip wheel --use-pep517 --wheel-dir=/src/wheels \
@@ -8,17 +11,17 @@ RUN python3 -m pip wheel --use-pep517 --wheel-dir=/src/wheels \
         mod-wsgi \
         requests-kerberos
 
-FROM quay.io/konflux-fedora/centos-cloud-sig/openstack-dependencies-centos10-epoxy@sha256:d18f72fae9c2c7bb892ae639c5494db613ce40e5515e4fc8136de59ebf2bb106
-USER root
-COPY . /src/
-COPY --from=builder /src/wheels /src/wheels
-#source /tmp/cachi2.env && export PIP_CACHE_DIR=/tmp/cache/pip && 
 RUN python3 -m pip install --find-links=/src/wheels \
         keystone \
         ldappool \
         mod-wsgi \
         requests-kerberos
 
+FROM quay.io/konflux-fedora/centos-cloud-sig/openstack-dependencies-centos10-epoxy:66cf83e2f1e21be3fabd2be910239ff1e815a99a
+USER root
+COPY . /src/
+COPY --from=builder /opt/venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
 # FIXME: mod_auth_mellon RPM is missing (it's available in cs9-appstream but not cs10-appstream)
 RUN dnf -y install httpd mod_auth_gssapi mod_auth_openidc mod_ssl systemd-udev && dnf clean all && rm -rf /var/cache/dnf
 
@@ -56,8 +59,8 @@ RUN install -d -m 755 /var/log/keystone
 RUN touch /var/log/keystone/keystone.log && chmod 660 /var/log/keystone/keystone.log && chown root:keystone /var/log/keystone/keystone.log
 
 RUN mkdir -p /var/www/cgi-bin/keystone && chown -R keystone /var/www/cgi-bin/keystone
-RUN cp -a /usr/local/bin/keystone-wsgi-public /var/www/cgi-bin/keystone/main
-RUN cp -a /usr/local/bin/keystone-wsgi-admin /var/www/cgi-bin/keystone/admin
-RUN cp -a /usr/local/bin/keystone-* /usr/bin/
+RUN cp -a /opt/venv/bin/keystone-wsgi-public /var/www/cgi-bin/keystone/main
+RUN cp -a /opt/venv/bin/keystone-wsgi-admin /var/www/cgi-bin/keystone/admin
+RUN cp -a /opt/venv/bin/keystone-* /usr/bin/
 RUN sed -i -r 's,^(Listen 80),#\1,' /etc/httpd/conf/httpd.conf
 RUN sed -i -r 's,^(Listen 443),#\1,' /etc/httpd/conf.d/ssl.conf

@@ -85,3 +85,6 @@ install-python-deps: build-dev-libs-image
 	        # FIXME: remove network once hermetic build reenabled
 		# https://github.com/jcapiitao/rdo-konflux-s2i/issues/26
 		#--network none \
+
+clean:
+	rm -rf cachi2-output/ cachi2.env
